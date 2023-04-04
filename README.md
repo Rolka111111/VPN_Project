@@ -67,7 +67,7 @@ apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 - maka proses install akan berjalan, jangan keluar dari vps
 - jika keluar dari vps saat lagi proses install,maka akan gagal
 ```
-wget https://raw.githubusercontent.com/owl64/VPN_Project/main/setup.sh && chmod +x setup.sh && ./setup.sh
+wget https://raw.githubusercontent.com/owl64/VPN_Project/master/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 5. jika sudah selesai,lalu untuk menampilkan menu Ketik
 

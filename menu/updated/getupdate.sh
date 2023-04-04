@@ -23,7 +23,7 @@ echo -e "${NC}${LIGHT}Telegram : https://t.me/liz_mine"
 exit 0
 fi
 clear
-lizupdate="raw.githubusercontent.com/owl64/VPN_Project/main/update"
+lizupdate="raw.githubusercontent.com/owl64/VPN_Project/master/update"
 # change direct
 cd /usr/bin
 # remove file
