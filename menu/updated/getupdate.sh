@@ -23,7 +23,7 @@ echo -e "${NC}${LIGHT}Telegram : https://t.me/liz_mine"
 exit 0
 fi
 clear
-lizupdate="raw.githubusercontent.com/lizsvr/cfnfree/main/update"
+lizupdate="raw.githubusercontent.com/owl64/VPN_Project/main/update"
 # change direct
 cd /usr/bin
 # remove file
@@ -31,18 +31,22 @@ rm menu
 rm -rf menu
 # Download update
 wget -O menu "https://${lizupdate}/menu.sh"
-wget -O maddssh "https://${lizupdate}/maddssh.sh"
 wget -O mbackup "https://${lizupdate}/mbackup.sh"
-wget -O maddxray "https://${lizupdate}/maddxray.sh"
 wget -O msetting "https://${lizupdate}/msetting.sh"
 wget -O start-menu "https://${lizupdate}/start-menu.sh"
+wget -O pshadowshock "https://${lizupdate}/pshadowshock.sh"
+wget -O ptrojan "https://${lizupdate}/ptrojan.sh"
+wget -O pxrayvless "https://${lizupdate}/pxrayvless.sh"
+wget -O pxrayvmess "https://${lizupdate}/pxrayvmess.sh"
 # change Permission
 chmod +x menu
-chmod +x maddssh
-chmod +x maddxray
+chmod +x pshadowshock
+chmod +x ptrojan
 chmod +x mbackup
 chmod +x msetting
 chmod +x start-menu
+chmod +x pxrayvless
+chmod +x pxrayvmess
 #change direct
 cd /root
 # clear
