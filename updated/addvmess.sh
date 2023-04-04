@@ -11,6 +11,7 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
+domain1=$(cat /etc/xray/domain)
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 IZIN=$(curl https://raw.githubusercontent.com/lizsvr/project/main/ipvps.txt | grep $MYIP | awk '{print $3}')
@@ -53,7 +54,7 @@ cat>/etc/xray/vmess-$user-tls.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "${domain}",
+      "add": "${domain1}",
       "port": "${tls}",
       "id": "${uuid}",
       "aid": "0",
@@ -68,7 +69,7 @@ cat>/etc/xray/vmess-$user-nontls.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "${domain}",
+      "add": "${domain1}",
       "port": "${nontls}",
       "id": "${uuid}",
       "aid": "0",
@@ -83,7 +84,7 @@ cat>/etc/xray/vmess-$user-grpc.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "${domain}",
+      "add": "${domain1}",
       "port": "${tls}",
       "id": "${uuid}",
       "aid": "0",
@@ -110,7 +111,7 @@ echo -e ""
 echo -e "======-XRAYS/VMESS-======"
 echo -e "Remarks     : ${user}"
 echo -e "IP/Host     : ${MYIP}"
-echo -e "Address     : ${domain}"
+echo -e "Address     : ${domain1}"
 echo -e "Port TLS    : ${tls}"
 echo -e "Port No TLS : ${nontls}"
 echo -e "User ID     : ${uuid}"
