@@ -11,19 +11,8 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
-MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-IZIN=$( curl ipinfo.io/ip | grep $MYIP )
-if [ $MYIP = $MYIP ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
-else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Fuck You"
-exit 0
-fi
-clear
 echo -n > /tmp/other.txt
-data=( `cat /etc/xray/config.json | grep '^###' | cut -d ' ' -f 2`);
+data=( `cat /etc/xray/config.json | grep '###' | cut -d ' ' -f 2`);
 echo "----------------------------------------";
 echo "---------=[ Vmess User Login ]=---------";
 echo "----------------------------------------";
@@ -54,11 +43,10 @@ echo "user : $akun";
 echo "$jum2";
 echo "----------------------------------------"
 fi
-rm -rf /tmp/ipvmess.txt
+
 done
 oth=$(cat /tmp/other.txt | sort | uniq | nl)
 echo "other";
 echo "$oth";
 echo "----------------------------------------"
 echo "Script Mod By andi64"
-rm -rf /tmp/other.txt

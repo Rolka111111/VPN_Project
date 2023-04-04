@@ -30,7 +30,7 @@ else
 fi
 # ==========================================
 # link hosting kalian
-akbarvpn="https://raw.githubusercontent.com/owl64/VPN_Project/master/menu"
+akbarvpn="https://raw.githubusercontent.com/owl64/VPN_Project/master/backup"
 akbarvpnn="https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updated"
 akbarvpnnn="https://raw.githubusercontent.com/owl64/VPN_Project/master/updated"
 cd
@@ -50,15 +50,27 @@ cd /usr/bin
 wget -O updatedll "https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updatedll.sh"
 wget -O restart-xray "https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/restart-xray.sh"
 wget -O cek-port "https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/cek-port.sh"
+wget -O cek-port "https://raw.githubusercontent.com/owl64/VPN_Project/master/backup/rclone.conf"
+# Get Backup Menu
+wget -O addemail "${akbarvpn}/addemail.sh"
+wget -O autobackup "${akbarvpn}/autobackup.sh"
+wget -O backup "${akbarvpn}/backup.sh"
+wget -O changesend "${akbarvpn}/changesend.sh"
+wget -O restore "${akbarvpn}/restore.sh"
+wget -O set-br "${akbarvpn}/set-br.sh"
+wget -O startbackup "${akbarvpn}/startbackup.sh"
+wget -O stopbackup "${akbarvpn}/stopbackup.sh"
+wget -O strt "${akbarvpn}/strt.sh"
+wget -O testsend "${akbarvpn}/testsend.sh"
 # Update menu
 wget -O menu "${akbarvpnn}/menu.sh"
 wget -O msettings "${akbarvpnn}/msetting.sh"
-wget -O maddxray "${akbarvpnn}/maddxray.sh"
 wget -O start-menu "${akbarvpnn}/start-menu.sh"
-wget -O pshadowshock "https://${akbarvpnn}/pshadowshock.sh"
-wget -O ptrojan "https://${akbarvpnn}/ptrojan.sh"
-wget -O pxrayvless "https://${akbarvpnn}/pxrayvless.sh"
-wget -O pxrayvmess "https://${akbarvpnn}/pxrayvmess.sh"
+wget -O pshadowshock "${akbarvpnn}/pshadowshock.sh"
+wget -O ptrojan "${akbarvpnn}/ptrojan.sh"
+wget -O pxrayvless "${akbarvpnn}/pxrayvless.sh"
+wget -O pxrayvmess "${akbarvpnn}/pxrayvmess.sh"
+wget -O mbackup "${akbarvpnn}/mbackup.sh"
 # update xray menu
 wget -O addvmess "${akbarvpnnn}/addvmess.sh"
 wget -O dellvmess "${akbarvpnnn}/dellvmess.sh"
