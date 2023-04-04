@@ -1,6 +1,6 @@
 <p align="center">
 
-# XRAY MULTI PORT MOD
+# XRAY MULTI PORT MOD BY ANDI64
 - ***Script XRAY Multi Port 443/80***
 - ***Original Script By SL***
 
