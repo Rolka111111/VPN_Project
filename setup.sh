@@ -39,7 +39,7 @@ wget https://raw.githubusercontent.com/owl64/VPN_Project/main/install-tools.sh &
 #Instal Xray
 wget https://raw.githubusercontent.com/owl64/VPN_Project/main/install-xray.sh && chmod +x install-xray.sh && ./install-xray.sh
 #install xmenu
-#wget https://raw.githubusercontent.com/lizsvr/XRAY-MULTI/main/menu/updatedll.sh && chmod +x updatedll.sh && ./updatedll.sh
+#wget https://raw.githubusercontent.com/owl64/VPN_Project/main/menu/updatedll.sh && chmod +x updatedll.sh && ./updatedll.sh
 #
 #SELESAI
 # collor status

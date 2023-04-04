@@ -69,7 +69,7 @@ apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 ```
 wget https://raw.githubusercontent.com/lizsvr/XRAY-MULTI/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
-5. jika sudah selesai,lalu ketik xmenu untuk menampilkan menu
+5. jika sudah selesai,lalu untuk menampilkan menu Ketik
 
 ```
 menu
@@ -91,6 +91,5 @@ restart-xray
 # INFO KODE SCRIPT
 - xmenu (untuk menampilkan menu original)
 - menu (untuk menampilkan menu mod)
-- updatedll (untuk update sc) Sementara di nonaktifkan
 - restart-xray (hidupkan ulang xray)
 - certv2ray/certxray (Perbarui Sertifikat / Update Certificate)
