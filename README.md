@@ -89,7 +89,6 @@ restart-xray
 ```
 
 # INFO KODE SCRIPT
-- xmenu (untuk menampilkan menu original)
 - menu (untuk menampilkan menu mod)
 - restart-xray (hidupkan ulang xray)
 - certv2ray/certxray (Perbarui Sertifikat / Update Certificate)
