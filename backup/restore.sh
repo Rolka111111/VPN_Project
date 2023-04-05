@@ -28,6 +28,7 @@ echo "Please input link to your vps data backup file."
 echo "You can check it on your email if you run backup data vps before."
 read -rp "Link File: " -e url
 wget -O backup.zip "$url"
+cp backup.zip /root/
 unzip backup.zip
 rm -f backup.zip
 sleep 1
@@ -44,10 +45,9 @@ cp gshadow /etc/
 # cp -r akbarstorevpn /var/lib/
 # cp -r sstp /home/
 cp -r xray /etc/
-cp -r nginx /etc/
-cp -r trojan-go /etc/
-#cp -r shadowsocksr /usr/local/
-#cp -r public_html /home/vps/
+# cp -r trojan-go /etc/
+# cp -r shadowsocksr /usr/local/
+cp -r public_html /home/vps/
 cp crontab /etc/
 strt
 rm -rf /root/backup
