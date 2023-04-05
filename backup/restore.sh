@@ -48,8 +48,8 @@ cp -r xray /etc/
 # cp -r trojan-go /etc/
 # cp -r shadowsocksr /usr/local/
 cp -r public_html /home/vps/
-cp crontab /etc/
-strt
+#cp crontab /etc/
+#strt
 rm -rf /root/backup
 rm -f backup.zip
 echo Done
