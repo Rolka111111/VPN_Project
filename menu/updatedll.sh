@@ -107,6 +107,7 @@ chmod +x pshadowshock
 chmod +x ptrojan
 chmod +x pxrayvless
 chmod +x pxrayvmess
+chmod +x mbackup
 # update xray menu
 chmod +x addvmess
 chmod +x dellvmess
