@@ -57,7 +57,7 @@ echo -e "$BLUE║---------------------------------------║"
 echo -e "$BLUE╠➣$NC Original Script by SL                $BLUE║"
 echo -e "$BLUE╠➣$NC Mod Menu by andi64                   $BLUE║"
 echo -e "$BLUE╠➣$NC Telegram https://t.me/owl64          $BLUE║"
-echo -e "$BLUE╚═══════════════════════════════════════╝$NC
+echo -e "$BLUE╚═══════════════════════════════════════╝$NC"
 read -p "Select From Options [ 1 - 9 ] : " menu
 echo -e ""
 case $menu in
