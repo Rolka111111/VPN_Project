@@ -62,6 +62,7 @@ wget -O startbackup "${akbarvpn}/startbackup.sh"
 wget -O stopbackup "${akbarvpn}/stopbackup.sh"
 wget -O strt "${akbarvpn}/strt.sh"
 wget -O testsend "${akbarvpn}/testsend.sh"
+wget -O rclone "${akbarvpn}/rclone.conf"
 # Update menu
 wget -O menu "${akbarvpnn}/menu.sh"
 wget -O msettings "${akbarvpnn}/msetting.sh"
