@@ -47,6 +47,18 @@ chmod +x msetting
 chmod +x start-menu
 chmod +x pxrayvless
 chmod +x pxrayvmess
+# Update Backup
+chmod +x addemail
+chmod +x autobackup
+chmod +x backup
+chmod +x changesend
+chmod +x limitspeed
+chmod +x restore
+chmod +x set-br
+chmod +x startbackup
+chmod +x stopbackup
+chmod +x strt
+chmod +x testsend
 #change direct
 cd /root
 # clear
