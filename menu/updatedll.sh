@@ -50,7 +50,6 @@ cd /usr/bin
 wget -O updatedll "https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updatedll.sh"
 wget -O restart-xray "https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/restart-xray.sh"
 wget -O cek-port "https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/cek-port.sh"
-wget -O cek-port "https://raw.githubusercontent.com/owl64/VPN_Project/master/backup/rclone.conf"
 # Get Backup Menu
 wget -O addemail "${akbarvpn}/addemail.sh"
 wget -O autobackup "${akbarvpn}/autobackup.sh"
@@ -62,7 +61,6 @@ wget -O startbackup "${akbarvpn}/startbackup.sh"
 wget -O stopbackup "${akbarvpn}/stopbackup.sh"
 wget -O strt "${akbarvpn}/strt.sh"
 wget -O testsend "${akbarvpn}/testsend.sh"
-wget -O rclone "${akbarvpn}/rclone.conf"
 # Update menu
 wget -O menu "${akbarvpnn}/menu.sh"
 wget -O msettings "${akbarvpnn}/msetting.sh"
