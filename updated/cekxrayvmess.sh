@@ -12,7 +12,7 @@ LIGHT='\033[0;37m'
 # ==========================================
 # Getting
 echo -n > /tmp/other.txt
-data=( `cat /etc/xray/config.json | grep '###' | cut -d ' ' -f 2`);
+data=( `cat /etc/xray/config.json | grep '^###' | cut -d ' ' -f 2`);
 echo "----------------------------------------";
 echo "---------=[ Vmess User Login ]=---------";
 echo "----------------------------------------";
@@ -43,10 +43,10 @@ echo "user : $akun";
 echo "$jum2";
 echo "----------------------------------------"
 fi
-
+#rm -rf /tmp/ipvless.txt
 done
-oth=$(cat /tmp/other.txt | sort | uniq | nl)
-echo "other";
-echo "$oth";
-echo "----------------------------------------"
+#oth=$(cat /tmp/other.txt | sort | uniq | nl)
+#echo "other";
+#echo "$oth";
+#echo "----------------------------------------"
 echo "Script Mod By andi64"
