@@ -6,25 +6,15 @@
 
 #
 
-# FITUR XRAY TLS
-- TROJAN WS        : **443**
-- TROJAN GRPC      : **443**
-- SHADOWSOCKS WS   : **443**
-- SHADOWSOCKS GRPC : **443**
-- VMESS WS         : **443**
-- VMESS GRPC       : **443**
-- VLESS WS         : **443**
-- VLESS GRPC       : **443**
-
-# FITUR XRAY HTTP
-- TROJAN WS        : **80**
-- TROJAN GRPC      : **80**
-- SHADOWSOCKS WS   : **80**
-- SHADOWSOCKS GRPC : **80**
-- VMESS WS         : **80**
-- VMESS GRPC       : **80**
-- VLESS WS         : **80**
-- VLESS GRPC       : **80**
+# FITUR XRAY TLS DAN NON TLS
+- TROJAN WS        : **443**/**80**
+- TROJAN GRPC      : **443**/**80**
+- SHADOWSOCKS WS   : **443**/**80**
+- SHADOWSOCKS GRPC : **443**/**80**
+- VMESS WS         : **443**/**80**
+- VMESS GRPC       : **443**/**80**
+- VLESS WS         : **443**/**80**
+- VLESS GRPC       : **443**/**80**
 
 # MOD List & Updated
 - Pengoptimalan Menu
@@ -33,6 +23,8 @@
 - penambahan masa aktif/rennew akun
 - fixed auto reboot 05:00 GTM +7 
 - Add auto Expired
+- Fix Bug Backup and Restore
+- Fix Bug Achme SSL 
 - dll
 
 # OS 
@@ -44,7 +36,7 @@
 # Syarat && Bahan Untuk Menggunakan Script Ini
 - Wajib Punya VPS
 - Wajib Punya Akun Cloudflare
-- Wajib Punya Domain Punya Kamu Sendiri
+- Wajib Punya Domain Kamu Sendiri
 - ***Jika semua syarat dan Bahan sudah terpenuhi ,silahkan di coba script ini***
 
 # Cara Install Script Nya
@@ -64,12 +56,11 @@ apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 3. Login Lagi Ke VPS NYA
 
 4. Salin kode di bawah ini dan paste kan ke dalam vps punya kamu
-- maka proses install akan berjalan, jangan keluar dari vps
-- jika keluar dari vps saat lagi proses install,maka akan gagal
+- Jangan Menutup Terminal Sebelum Instalasi selesai
 ```
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
-5. jika sudah selesai,lalu untuk menampilkan menu Ketik
+5. jika sudah selesai, untuk menampilkan menu Ketik
 
 ```
 menu
@@ -91,4 +82,16 @@ restart-xray
 # INFO KODE SCRIPT
 - menu (untuk menampilkan menu mod)
 - restart-xray (hidupkan ulang xray)
-- certv2ray/certxray (Perbarui Sertifikat / Update Certificate)
+- certxray (Perbarui Sertifikat / Update Certificate)
+
+# SYARAT DAN KETENTUAN
+- Dilarang keras menjual kembali Script ini
+- Semuanya Gratis tanpa di pungut biyaya apapun
+- Ketentuan dan Syarat bisa berubah sewaktu - waktu tanpa pemberitahuan
+- Memakai Artinya SETUJU
+- Tanya tanya silahkan Kemari, https://t.me/andiowl
+
+# Traktir Coffe
+- Gopay: 082217067357
+- Dana: 082217067357
+- Kunjungi Juga: https://sdc.my.id
