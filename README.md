@@ -33,7 +33,7 @@
 * Berhasil di gunakan di vps aws dan os debian 9 hvm
 * untuk vps isp yg lain saya tidak tau, dan os yg lain juga saya tidak tau wkwk
 
-# Syarat && Bahan Untuk Menggunakan Script Ini
+# Syarat & Bahan Untuk Menggunakan Script Ini
 - Wajib Punya VPS
 - Wajib Punya Akun Cloudflare
 - Wajib Punya Domain Kamu Sendiri
