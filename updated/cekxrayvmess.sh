@@ -15,7 +15,6 @@ data=( `cat /var/log/xray/access.log | grep 'email:' | cut -d ' ' -f 7 | sort -u
 echo "----------------------------------------";
 echo "---------=[ Vmess User Login ]=---------";
 echo "----------------------------------------";
-echo "----------------------------------------"
 for i in "${data[@]}"
 do
  echo "$i" >> /tmp/other.txt
