@@ -92,7 +92,7 @@ restart-xray
 - Memakai Artinya SETUJU
 - Tanya tanya silahkan Kemari, https://t.me/andiowl
 
-# Traktir Coffe
+# Traktir Kopi
 - Gopay: 082217067357
 - Dana: 082217067357
 - Kunjungi Juga: https://sdc.my.id
