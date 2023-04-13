@@ -52,4 +52,8 @@ cp -r public_html /home/vps/
 #strt
 rm -rf /root/backup
 rm -f backup.zip
-echo Done
+echo "Berhasil Melakukan Restore"
+sleep 1
+echo "Menyalakan Ulang Service"
+sleep 2
+restart-xray
