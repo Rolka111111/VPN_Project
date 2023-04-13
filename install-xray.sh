@@ -142,7 +142,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
          "network": "ws",
             "wsSettings": {
-                "path": "/xrayws"
+                "path": "/"
           }
         }
      },
@@ -161,7 +161,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
          "network": "ws",
             "wsSettings": {
-                "path": "/xrayvws"
+                "path": "/"
           }
         }
      },
