@@ -11,6 +11,7 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
+clear
 data=( `cat /var/log/xray/access.log | grep 'email:' | cut -d ' ' -f 7 | sort -u`);
 echo "----------------------------------------";
 echo "---------=[ Vmess User Login ]=---------";
