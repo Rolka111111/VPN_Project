@@ -34,6 +34,7 @@ NUMBER_OF_CLIENTS=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut 
 			read -rp "Select one client [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
 		fi
 	done
+clear
 user=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 uuid=( `cat /etc/xray/vmess-tariman-tls.json | grep '"id": ' | cut -d ' ' -f 8`);
 ## ubah config ke base64
@@ -54,7 +55,7 @@ echo -e "User ID     : ${uuid}"
 echo -e "Alter ID    : 0"
 echo -e "Security    : auto"
 echo -e "Network     : ws"
-echo -e "Path        : /xrayvws"
+echo -e "Path        : /vmess/"
 echo -e "Path GRPC   : vmess-grpc"
 echo -e "========================="
 echo -e "Link TLS    : ${xrayv2ray1}"
