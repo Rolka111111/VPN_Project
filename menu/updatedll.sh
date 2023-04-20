@@ -91,6 +91,7 @@ wget -O xp "${akbarvpnnn}/xp.sh"
 wget -O cekxraytrojan "${akbarvpnnn}/cekxraytrojan.sh"
 wget -O cekxrayvless "${akbarvpnnn}/cekxrayvless.sh"
 wget -O cekxrayvmess "${akbarvpnnn}/cekxrayvmess.sh"
+wget -O cekxrayvmess "${akbarvpnnn}/cekdetailvmess.sh"
 
 #
 chmod +x /usr/bin/updatedll
