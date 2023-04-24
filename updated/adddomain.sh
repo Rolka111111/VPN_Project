@@ -55,9 +55,6 @@ fi
 # Delete Files
 rm -f /etc/xray/xray.crt
 rm -f /etc/xray/xray.key
-#Hilangkan Script dibawah Jika nginx Error (2 baris)
-rm -f /root/domain
-rm -f /etc/xray/domain
 # Done
 echo $domain >> /etc/xray/domain
 echo $domain >> /root/domain
