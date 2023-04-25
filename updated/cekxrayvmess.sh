@@ -12,16 +12,27 @@ LIGHT='\033[0;37m'
 # ==========================================
 # Getting
 clear
-data=( `cat /var/log/xray/access.log | grep 'email:' | cut -d ' ' -f 7 | sort -u`);
-echo "----------------------------------------";
-echo "---------=[ Vmess User Login ]=---------";
-echo "----------------------------------------";
-for i in "${data[@]}"
-do
- echo "$i" >> /tmp/other.txt
-done
-oth=$(cat /tmp/other.txt | sort | uniq | nl)
-echo "$oth"
-echo "----------------------------------------"
-echo "Script Mod By andi64"
-rm -rf /tmp/other.txt
+echo " "
+echo " "
+if [ -e "/var/log/xray/access.log" ]; then
+        LOG="/var/log/xray/access.log";
+fi
+if [ -e "/var/log/xray/error.log" ]; then
+        LOG="/var/log/xray/error.log";
+fi
+if [ -f "/var/log/xray/access.log" ]; then
+echo ""
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[44;1;39m            ⇱ XRAY Info Live⇲                   \E[0m"
+echo -e "\E[44;1;39m  ⇱ No | Tahun/Bulan/Tanggal  | Nama User ⇲     \E[0m"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo "----------------------------------------------";
+        cat /var/log/xray/access.log | awk '{print $0}' | tail -n 69120 | cut -d " " -f 1,7 | sort -u | uniq > /tmp/xray-login.txt
+        cat /tmp/xray-login.txt | sort | uniq | nl
+	rm -r /tmp/xray-login.txt
+fi
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[44;1;39m            ⇱ Script MOD By andi64 ⇲             \E[0m"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo ""
+echo "";

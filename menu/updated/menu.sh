@@ -52,7 +52,8 @@ echo -e "$BLUE╠➣$NC 5$NC. Restart All Service         $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 6$NC. List Port Used              $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 7$NC. Cek Service                 $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 8$NC. Settings                    $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 9$NC. Exit                        $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 9$NC. Bandwith                    $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 10$NC. Exit                       $BLUE      ║ "
 echo -e "$BLUE║---------------------------------------║"
 echo -e "$BLUE╠➣$NC Original Script by SL                $BLUE║"
 echo -e "$BLUE╠➣$NC Mod Menu by andi64                   $BLUE║"
@@ -86,6 +87,9 @@ start-menu
 msettings
 ;;
 9)
+mbandwith
+;;
+10)
 clear
 exit
 ;;

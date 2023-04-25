@@ -70,6 +70,7 @@ wget -O ptrojan "${akbarvpnn}/ptrojan.sh"
 wget -O pxrayvless "${akbarvpnn}/pxrayvless.sh"
 wget -O pxrayvmess "${akbarvpnn}/pxrayvmess.sh"
 wget -O mbackup "${akbarvpnn}/mbackup.sh"
+wget -O mbandwith "${akbarvpnn}/mbandwith.sh"
 # update xray menu
 wget -O addvmess "${akbarvpnnn}/addvmess.sh"
 wget -O dellvmess "${akbarvpnnn}/dellvmess.sh"
@@ -92,7 +93,8 @@ wget -O cekxraytrojan "${akbarvpnnn}/cekxraytrojan.sh"
 wget -O cekxrayvless "${akbarvpnnn}/cekxrayvless.sh"
 wget -O cekxrayvmess "${akbarvpnnn}/cekxrayvmess.sh"
 wget -O cekdetailvmess "${akbarvpnnn}/cekdetailvmess.sh"
-
+wget -O cekbandwithuser "${akbarvpnnn}/cekbandwithuser.sh"
+wget -O cekbandwithvps "${akbarvpnnn}/cekbandwithvps.sh"
 #
 chmod +x /usr/bin/updatedll
 chmod +x updatedll
