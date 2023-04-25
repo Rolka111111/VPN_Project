@@ -80,6 +80,12 @@ lalu ketik
 ```
 restart-xray
 ```
+# Update SCRIPT
+Untuk melakukan Update Ketikan perintah berikut:
+```
+wget https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updated/getupdate.sh && chmod +x getupdate.sh && getupdate.sh
+```
+Lakukan Update tiap 3 bulan sekali
 
 # INFO KODE SCRIPT
 - menu (untuk menampilkan menu mod)
