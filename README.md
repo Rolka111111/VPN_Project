@@ -23,10 +23,11 @@
 - penambahan masa aktif/rennew akun
 - fixed auto reboot 05:00 GTM +7 
 - Add auto Expired
-- add multi path Vmess dan Vless
+- Add Trial User
+- Add Trafic Per User
 - Fix Bug Backup and Restore
 - Fix Bug Achme SSL 
-- Fix Bug Cek User Login
+- Fix Bug Cek User Login (8 jam Terbaru)
 - dll
 
 # OS 
