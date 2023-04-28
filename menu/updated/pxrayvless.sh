@@ -21,28 +21,32 @@ echo -e "$BLUE║$NC $BRED             [ Vless Panel ]       $BLUE   ║"
 echo -e "$BLUE╠═══════════════════════════════════════$BLUE╣"
 echo -e "$BLUE║---------------------------------------║"
 echo -e "$BLUE╠➣$NC 1$NC. Create Account XRAYS Vless $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 2$NC. Delete Account XRAYS Vless $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 3$NC. Check User Login           $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 4$NC. Rennew Account XRAYS Vless $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 5$NC. Back To Menu               $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 2$NC. Trial Account XRAYS Vless  $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 3$NC. Delete Account XRAYS Vless $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 4$NC. Check User Login           $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 5$NC. Rennew Account XRAYS Vless $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 6$NC. Back To Menu               $BLUE      ║ "
 echo -e "$BLUE║---------------------------------------║"
 echo -e "$BLUE╚═══════════════════════════════════════╝$NC"  
-read -p "Select From Options [ 1 - 5 ] : " menu
+read -p "Select From Options [ 1 - 6 ] : " menu
 echo -e ""
 case $menu in
 1)
 addvless
 ;;
 2)
-delless
+trialvless
 ;;
 3)
-cekxrayvless
+delless
 ;;
 4)
-rennewvless
+cekxrayvless
 ;;
 5)
+rennewvless
+;;
+6)
 menu
 ;;
 *)
