@@ -95,6 +95,7 @@ wget -O cekxrayvmess "${akbarvpnnn}/cekxrayvmess.sh"
 wget -O cekdetailvmess "${akbarvpnnn}/cekdetailvmess.sh"
 wget -O cekbandwithuser "${akbarvpnnn}/cekbandwithuser.sh"
 wget -O cekbandwithvps "${akbarvpnnn}/cekbandwithvps.sh"
+wget -O trialvmess "${akbarvpnnn}/trialvmess.sh"
 #
 chmod +x /usr/bin/updatedll
 chmod +x updatedll
@@ -102,7 +103,7 @@ chmod +x restart-xray
 chmod +x cek-port
 # update menu
 chmod +x msettings
-chmod +x maddxray
+chmod +x mbandwith
 chmod +x start-menu
 chmod +x menu
 chmod +x pshadowshock
@@ -131,6 +132,10 @@ chmod +x xp
 chmod +x cekxraytrojan
 chmod +x cekxrayvless
 chmod +x cekxrayvmess
+chmod +x cekdetailvmess
+chmod +x cekbandwithuser
+chmod +x cekbandwithvps
+chmod +x trialvmess
 # Update Backup
 chmod +x addemail
 chmod +x autobackup

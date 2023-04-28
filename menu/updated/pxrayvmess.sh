@@ -21,32 +21,36 @@ echo -e "$BLUE║$NC $BRED             [ Vmeess Panel ]      $BLUE   ║"
 echo -e "$BLUE╠═══════════════════════════════════════$BLUE╣"
 echo -e "$BLUE║---------------------------------------║"
 echo -e "$BLUE╠➣$NC 1$NC. Create Account XRAYS Vmess $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 2$NC. Delete Account XRAYS Vmess $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 3$NC. Check User Login           $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 4$NC. Rennew Account XRAYS Vmess $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 5$NC. Cek Detail Akun XRAYS Vmess $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 6$NC. Back To Menu               $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 2$NC. Trial Account XRAYS Vmess  $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 3$NC. Delete Account XRAYS Vmess $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 4$NC. Check User Login           $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 5$NC. Rennew Account XRAYS Vmess $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 6$NC. Cek Detail Akun XRAYS Vmess $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 7$NC. Back To Menu               $BLUE      ║ "
 echo -e "$BLUE║---------------------------------------║"
 echo -e "$BLUE╚═══════════════════════════════════════╝$NC"  
-read -p "Select From Options [ 1 - 6 ] : " menu
+read -p "Select From Options [ 1 - 7 ] : " menu
 echo -e ""
 case $menu in
 1)
 addvmess
 ;;
 2)
-dellvmess
+tiralvmess
 ;;
 3)
-cekxrayvmess
+dellvmess
 ;;
 4)
-rennewvmess
+cekxrayvmess
 ;;
 5)
-cekdetailvmess
+rennewvmess
 ;;
 6)
+cekdetailvmess
+;;
+7)
 menu
 ;;
 *)
