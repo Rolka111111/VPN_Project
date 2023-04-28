@@ -40,7 +40,7 @@ wget https://raw.githubusercontent.com/owl64/VPN_Project/master/install-tools.sh
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/install-xray.sh && chmod +x install-xray.sh && ./install-xray.sh
 #install xmenu
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updatedll.sh && chmod +x updatedll.sh && ./updatedll.sh
-#install xmenu
+#install Backup
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #
 #SELESAI
