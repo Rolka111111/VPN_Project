@@ -28,6 +28,7 @@
 - Fix Bug Backup and Restore
 - Fix Bug Achme SSL 
 - Fix Bug Cek User Login (8 jam Terbaru)
+- Fix Bug PHP (502 Bad Gateway)
 - dll
 
 # OS 
