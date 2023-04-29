@@ -31,10 +31,11 @@ echo -e "$BLUE╠➣$NC 2$NC. Change Port XRAYS WS/GRPC & HTTP$BLUE  ║ "
 echo -e "$BLUE╠➣$NC 3$NC. Cek Bandwith Server         $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 4$NC. System Backup & Restore         $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 5$NC. Rennew Cert                 $BLUE      ║ " 
-echo -e "$BLUE╠➣$NC 6$NC. Back to Menu                $BLUE      ║ " 
+echo -e "$BLUE╠➣$NC 6$NC. Reset Log Xray                 $BLUE      ║ " 
+echo -e "$BLUE╠➣$NC 7$NC. Back to Menu                $BLUE      ║ " 
 echo -e "$BLUE║---------------------------------------║"
 echo -e "$BLUE╚═══════════════════════════════════════╝$NC"  
-read -p "Select From Options [ 1 - 6 ] : " menu
+read -p "Select From Options [ 1 - 7 ] : " menu
 echo -e ""
 case $menu in
 1)
@@ -53,6 +54,9 @@ mbackup
 certxray
 ;;
 6)
+resetlog
+;;
+7)
 clear
 menu
 ;;
