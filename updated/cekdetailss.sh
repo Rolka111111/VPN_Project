@@ -11,7 +11,10 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
-domain1=$(cat /etc/xray/domain)
+exp=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 3)
+uuid=$(cat /proc/sys/kernel/random/uuid)
+tls="$(cat ~/log-install.txt | grep -w "XRAYS SHADOWSOCKS WS TLS " | cut -d: -f2|sed 's/ //g')"
+domain=$(cat /etc/xray/domain)
 MYIP=$(wget -qO- ipinfo.io/ip);
 NUMBER_OF_CLIENTS=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 2 | wc -l)
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
@@ -47,7 +50,6 @@ echo -e "=> WS TLS : /xrayssws"
 echo -e "=> GRPC   : ss-grpc" 
 echo -e "=> OPOK   : ws://bugcom/xrayssws" 
 echo -e "========================="
-echo -e "Created     : $hariini"
 echo -e "Expired     : $exp"
 echo -e "======Import Custom Config From URL ======="
 echo -e "Link TLS    : http://${domain}:89/ss-ws-$user.txt"
