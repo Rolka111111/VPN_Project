@@ -25,7 +25,7 @@
 - Add auto Expired
 - Add Trial User
 - Add Trafic Per User
-- Add Reset Log Xray (Tester)
+- Add Reset Log User
 - Fix Bug Backup and Restore
 - Fix Bug Achme SSL 
 - Fix Bug Cek User Login (8 jam Terbaru)
