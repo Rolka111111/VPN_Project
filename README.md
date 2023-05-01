@@ -105,4 +105,4 @@ Lakukan Update tiap 3 bulan sekali
 # Traktir Kopi
 - Gopay: 082217067357
 - Dana: 082217067357
-- Kunjungi Juga: https://sdc.my.id
+- Kunjungi Juga: https://www.sdc.my.id
