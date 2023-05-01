@@ -36,7 +36,7 @@ case $menu in
 addvmess
 ;;
 2)
-tiralvmess
+trialvmess
 ;;
 3)
 dellvmess
