@@ -11,8 +11,8 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
-exp=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 3)
-uuid=$(cat /proc/sys/kernel/random/uuid)
+exp=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
+uuid=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 tls="$(cat ~/log-install.txt | grep -w "XRAYS SHADOWSOCKS WS TLS " | cut -d: -f2|sed 's/ //g')"
 domain=$(cat /etc/xray/domain)
 MYIP=$(wget -qO- ipinfo.io/ip);
