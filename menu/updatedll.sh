@@ -98,6 +98,7 @@ wget -O cekbandwithvps "${akbarvpnnn}/cekbandwithvps.sh"
 wget -O trialvmess "${akbarvpnnn}/trialvmess.sh"
 wget -O trialvless "${akbarvpnnn}/trialvless.sh"
 wget -O resetlog "${akbarvpnnn}/resetlog.sh"
+wget -O cekdetailss "${akbarvpnnn}/cekdetailss.sh"
 #
 chmod +x /usr/bin/updatedll
 chmod +x updatedll
@@ -140,6 +141,7 @@ chmod +x cekbandwithvps
 chmod +x trialvmess
 chmod +x trialvless
 chmod +x resetlog
+chmod +x cekdetailss
 # Update Backup
 chmod +x addemail
 chmod +x autobackup

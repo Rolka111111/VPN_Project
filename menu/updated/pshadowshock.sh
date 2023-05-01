@@ -23,10 +23,11 @@ echo -e "$BLUE║---------------------------------------║"
 echo -e "$BLUE╠➣$NC 1$NC. Create Account Shadowshock $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 2$NC. Delete Account Shadowshock $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 3$NC. Rennew Account Shadowshock $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 4$NC. Back To Menu               $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 4$NC. Detail Account Shadowshock $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 5$NC. Back To Menu               $BLUE      ║ "
 echo -e "$BLUE║---------------------------------------║"
 echo -e "$BLUE╚═══════════════════════════════════════╝$NC"  
-read -p "Select From Options [ 1 - 4 ] : " menu
+read -p "Select From Options [ 1 - 5 ] : " menu
 echo -e ""
 case $menu in
 1)
@@ -39,6 +40,9 @@ dellss
 rennewss
 ;;
 4)
+cekdetailss
+;;
+5)
 menu
 ;;
 *)
