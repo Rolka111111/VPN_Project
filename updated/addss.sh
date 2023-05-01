@@ -277,6 +277,7 @@ cat > /home/vps/public_html/ss-grpc-$user.txt <<-END
   "stats": {}
 }
 END
+systemctl restart xray
 clear
 echo -e ""
 echo -e "======-SHADOWSOCKS-======"
