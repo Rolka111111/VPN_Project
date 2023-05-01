@@ -20,7 +20,7 @@ cd /var/log/xray/
 rm access.log
 #Buat File Log Kosong
 touch /var/log/xray/access.log
-touch /var/log/xray/error.log
-echo "${OK}Log Xray berhasil di reset"
+chown www-data.www-data
+echo "${OK}Reset Berhasil.."
 sleep 3
 restart-xray
