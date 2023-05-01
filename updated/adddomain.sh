@@ -51,10 +51,6 @@ if [[ ${MYIP} == ${cekdomain} ]]; then
      sleep 3
      exit 0
 fi
-# done
-# Delete Files
-rm -f /etc/xray/xray.crt
-rm -f /etc/xray/xray.key
 # Done
 echo $domain >> /etc/xray/domain
 echo $domain >> /root/domain
