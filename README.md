@@ -27,6 +27,7 @@
 - Add Trafic Per User
 - Add Reset Log User
 - Fix Bug Backup and Restore
+- Fix Bug add User ShadowShock
 - Fix Bug Achme SSL 
 - Fix Bug Cek User Login (8 jam Terbaru)
 - Fix Bug PHP (502 Bad Gateway)
