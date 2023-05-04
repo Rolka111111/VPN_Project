@@ -111,7 +111,9 @@ systemctl restart xray
 service cron restart
 clear
 echo -e ""
-echo -e "======-XRAYS/VMESS-======"
+echo "==============================="
+echo "  XRAYS/Vmess Account Restore  "
+echo "==============================="
 echo -e "Remarks     : ${user}"
 echo -e "IP/Host     : ${MYIP}"
 echo -e "Address     : ${domain1}"
