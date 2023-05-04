@@ -26,10 +26,11 @@ echo -e "$BLUE╠➣$NC 3$NC. Delete Account XRAYS Vmess $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 4$NC. Check User Login           $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 5$NC. Rennew Account XRAYS Vmess $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 6$NC. Cek Detail Akun XRAYS Vmess $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 7$NC. Back To Menu               $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 7$NC. Restore Akun XRAYS Vmess $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 8$NC. Back To Menu               $BLUE      ║ "
 echo -e "$BLUE║---------------------------------------║"
 echo -e "$BLUE╚═══════════════════════════════════════╝$NC"  
-read -p "Select From Options [ 1 - 7 ] : " menu
+read -p "Select From Options [ 1 - 8 ] : " menu
 echo -e ""
 case $menu in
 1)
@@ -51,6 +52,9 @@ rennewvmess
 cekdetailvmess
 ;;
 7)
+addaccountvmess
+;;
+8)
 menu
 ;;
 *)
