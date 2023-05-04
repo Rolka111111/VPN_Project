@@ -19,8 +19,8 @@
 - Pengoptimalan Menu
 - Menambahkan Tambah Domain Sebelum Install
 - Pemisahan pembuatan dan penghapusan masing-masing akun service
-- penambahan masa aktif/rennew akun
-- fixed auto reboot 05:00 GTM +7 
+- Penambahan masa aktif/rennew akun
+- Fixed auto reboot 05:00 GTM +7 
 - Add auto Expired
 - Add Trial User
 - Add Trafic Per User
@@ -30,11 +30,13 @@
 - Fix Bug Achme SSL 
 - Fix Bug Cek User Login (8 jam Terbaru)
 - Fix Bug PHP (502 Bad Gateway)
+- Fix Bug Json VMess Tidak Terhapus
 - dll
 
 # OS 
 - Debian 9 (HVM)
 - Debian 10
+- Ubuntu 18
 * Berhasil di gunakan di vps aws dan os debian 9 hvm
 * untuk vps isp yg lain saya tidak tau, dan os yg lain juga saya tidak tau wkwk
 
