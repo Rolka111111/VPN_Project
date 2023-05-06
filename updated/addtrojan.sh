@@ -40,7 +40,6 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
 			exit 1
 		fi
 	done
-read -p "Expired (Days) : " masaaktif
 uuid=$(cat /proc/sys/kernel/random/uuid)
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`

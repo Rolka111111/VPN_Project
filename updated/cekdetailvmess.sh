@@ -22,9 +22,10 @@ NUMBER_OF_CLIENTS=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut 
 
 	clear
 	echo ""
+	echo " ================================="
 	echo " Pilih Nomer Untuk Melihat Konfig"
 	echo " Tekan CTRL+C untuk Kembali"
-	echo " ==============================="
+	echo " ================================="
 	echo "     No User    Expired"
 	grep -E "^### " "/etc/xray/config.json" | cut -d ' ' -f 2-3 | sort | uniq | column -t | nl -s ') '
 	until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
