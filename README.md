@@ -25,7 +25,7 @@
 - Add Trial User
 - Add Trafic Per User
 - Add Reset Log User
-- Add Port Http
+- Add Port Http & Https
 - Restore Akun yang terhapus
 - Fix Bug Backup and Restore
 - Fix Bug add User ShadowShock
