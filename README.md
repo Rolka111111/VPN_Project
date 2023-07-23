@@ -33,6 +33,7 @@
 - Fix Bug Cek User Login (8 jam Terbaru)
 - Fix Bug PHP (502 Bad Gateway)
 - Fix Bug Json VMess Tidak Terhapus
+- fix Bug add Trojan
 - dll
 
 # OS 
