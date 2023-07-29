@@ -2,7 +2,7 @@ read -rp "Username : " -e user
 user=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 2 p)
 exp=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 3 p)
 echo "==============================="
-echo "  XRAYS/Vmess Account Tester  "
+echo "  XRAYS/Vmess Account Deleted  "
 echo "==============================="
 echo "Username  : $user"
 echo "Expired   : $exp"
