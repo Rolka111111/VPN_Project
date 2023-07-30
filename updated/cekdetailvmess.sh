@@ -37,7 +37,7 @@ NUMBER_OF_CLIENTS=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut 
 	done
 clear
 user=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
-uuid=( `cat /etc/xray/vmess-$user-tls.json | grep '"id": ' | cut -d ' ' -f 8`);
+uuid=( `grep -o '"id": "[^"]*' /etc/xray/config.json | grep -o '[^"]*$'`);
 ## ubah config ke base64
 vmess_base641=$( base64 -w 0 <<< $vmess_json1 )
 vmess_base642=$( base64 -w 0 <<< $vmess_json2 )
