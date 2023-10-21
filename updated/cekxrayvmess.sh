@@ -1,38 +1,47 @@
-#!/bin/bash
-# ==========================================
-# Color
-RED='\033[0;31m'
-NC='\033[0m'
-GREEN='\033[0;32m'
-ORANGE='\033[0;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-LIGHT='\033[0;37m'
-# ==========================================
-# Getting
+NC='\e[0m'
+DEFBOLD='\e[39;1m'
+RB='\e[31;1m'
+GB='\e[32;1m'
+YB='\e[33;1m'
+BB='\e[34;1m'
+MB='\e[35;1m'
+CB='\e[35;1m'
+WB='\e[37;1m'
 clear
-echo " "
-echo " "
-if [ -e "/var/log/xray/access.log" ]; then
-        LOG="/var/log/xray/access.log";
+echo -n >/tmp/other.txt
+data=($(cat /etc/xray/config.json | grep '^###' | cut -d ' ' -f 2 | sort | uniq))
+echo -e "${BB}————————————————————————————————————————————————————${NC}"
+echo -e "             ${WB}All Xray User Login Account${NC}              "
+echo -e "${BB}————————————————————————————————————————————————————${NC}"
+for akun in "${data[@]}"; do
+if [[ -z "$akun" ]]; then
+akun="Tidak Ada"
 fi
-if [ -e "/var/log/xray/error.log" ]; then
-        LOG="/var/log/xray/error.log";
+echo -n >/tmp/ipvmess.txt
+data2=($(cat /var/log/xray/access.log | tail -n 500 | cut -d " " -f 3 | sed 's/tcp://g' | cut -d ":" -f 1 | sort | uniq))
+for ip in "${data2[@]}"; do
+jum=$(cat /var/log/xray/access.log | grep -w "$akun" | tail -n 500 | cut -d " " -f 3 | sed 's/tcp://g' | cut -d ":" -f 1 | grep -w "$ip" | sort | uniq)
+if [[ "$jum" = "$ip" ]]; then
+echo "$jum" >>/tmp/ipvmess.txt
+else
+echo "$ip" >>/tmp/other.txt
 fi
-if [ -f "/var/log/xray/access.log" ]; then
+jum2=$(cat /tmp/ipvmess.txt)
+sed -i "/$jum2/d" /tmp/other.txt >/dev/null 2>&1
+done
+jum=$(cat /tmp/ipvmess.txt)
+if [[ -z "$jum" ]]; then
+echo >/dev/null
+else
+jum2=$(cat /tmp/ipvmess.txt | nl)
+echo "user : $akun"
+echo "$jum2"
+echo -e "${BB}————————————————————————————————————————————————————${NC}"
+fi
+rm -rf /tmp/ipvmess.txt
+done
+rm -rf /tmp/other.txt
 echo ""
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m            ⇱ XRAY Info Live⇲                   \E[0m"
-echo -e "\E[44;1;39m  ⇱ No | Tahun/Bulan/Tanggal  | Nama User ⇲     \E[0m"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo "----------------------------------------------";
-        cat /var/log/xray/access.log | awk '{print $0}' | tail -n 69120 | cut -d " " -f 1,7 | sort -u | uniq > /tmp/xray-login.txt
-        cat /tmp/xray-login.txt | sort | uniq | nl
-	rm -r /tmp/xray-login.txt
-fi
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m            ⇱ Script MOD By andi64 ⇲             \E[0m"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo ""
-echo "";
+read -n 1 -s -r -p "Press any key to back on menu"
+allxray
+
