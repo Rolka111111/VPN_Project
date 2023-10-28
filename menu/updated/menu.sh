@@ -43,22 +43,23 @@ echo -e "$BLUE╠➣$NC 1$NC. Panel Xray Vmess WS/GRPC    $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 2$NC. Panel Xray Vless WS/GRPC    $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 3$NC. Panel Trojan WS/GRPC        $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 4$NC. Panel ShadowShock WS/GRPC   $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 5$NC. Panel SSH WS CDN            $BLUE      ║ "
 echo -e "$BLUE║---------------------------------------║"
 echo -e "$BLUE╔═══════════════════════════════════════$BLUE╗"
 echo -e "$BLUE║$NC $BRED             [ SYSTEM MENU ]       $BLUE   ║"
 echo -e "$BLUE╠═══════════════════════════════════════$BLUE╣"
 echo -e "$BLUE║---------------------------------------║"
-echo -e "$BLUE╠➣$NC 5$NC. Restart All Service         $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 6$NC. List Port Used              $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 7$NC. Cek Service                 $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 8$NC. Settings                    $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 9$NC. Bandwith                    $BLUE      ║ "
-echo -e "$BLUE╠➣$NC 10$NC. Exit                       $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 6$NC. Restart All Service         $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 7$NC. List Port Used              $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 8$NC. Cek Service                 $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 9$NC. Settings                    $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 10$NC. Bandwith                   $BLUE      ║ "
+echo -e "$BLUE╠➣$NC 11$NC. Exit                       $BLUE      ║ "
 echo -e "$BLUE║---------------------------------------║"
 echo -e "$BLUE╠➣$NC Mod Menu by andi64                   $BLUE║"
 echo -e "$BLUE╠➣$NC Telegram https://t.me/andiowl          $BLUE║"
 echo -e "$BLUE╚═══════════════════════════════════════╝$NC"
-read -p "Select From Options [ 1 - 9 ] : " menu
+read -p "Select From Options [ 1 - 11 ] : " menu
 echo -e ""
 case $menu in
 1)
@@ -74,21 +75,24 @@ ptrojan
 pshadowshock
 ;;
 5)
-restart-xray
+mssh
 ;;
 6)
-cek-port
+restart-xray
 ;;
 7)
-start-menu
+cek-port
 ;;
 8)
-msettings
+start-menu
 ;;
 9)
-mbandwith
+msettings
 ;;
 10)
+mbandwith
+;;
+11)
 clear
 exit
 ;;
