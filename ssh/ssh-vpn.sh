@@ -114,15 +114,6 @@ install_ssl(){
     fi
 }
 
-# install webserver
-apt -y install nginx
-cd
-rm /etc/nginx/sites-enabled/default
-rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/nginx.conf"
-mkdir -p /home/vps/public_html
-/etc/init.d/nginx restart
-
 # install badvpn
 cd
 wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/newudpgw"
@@ -261,21 +252,6 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-# Bot panel
-wget -O add-bot-panel "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/add-bot-panel.sh"
-wget -O hapus-bot "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/hapus-bot.sh"
-wget -O stop-bot "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/stop-bot.sh"
-wget -O restart-bot "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/restart-bot.sh"
-# menu
-wget -O menu "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/menu.sh"
-wget -O menu-trial "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/menu-trial.sh"
-wget -O menu-vmess "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/menu-vmess.sh"
-wget -O menu-vless "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/menu-vless.sh"
-wget -O running "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/running.sh"
-wget -O clearcache "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/clearcache.sh"
-wget -O menu-trgo "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/menu-trgo.sh"
-wget -O menu-trojan "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/menu-trojan.sh"
-wget -O shadowsocks "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/xray/shadowsocks.sh"
 
 # menu ssh ovpn
 wget -O menu-ssh "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/menu-ssh.sh"
@@ -291,20 +267,6 @@ wget -O ceklim "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/cek
 wget -O tendang "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/tendang.sh"
 wget -O user-lock "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/user-lock.sh"
 wget -O user-unlock "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/user-unlock.sh"
-
-# menu system
-wget -O menu-set "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/menu-set.sh"
-wget -O menu-domain "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/menu-domain.sh"
-wget -O add-host "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/add-host.sh"
-wget -O port-change "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/port/port-change.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/xray/certv2ray.sh"
-wget -O menu-webmin "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/menu-webmin.sh"
-wget -O speedtest "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/speedtest_cli.py"
-wget -O about "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/about.sh"
-wget -O auto-reboot "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/auto-reboot.sh"
-wget -O restart "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/restart.sh"
-wget -O bw "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/bw.sh"
-wget -O up "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/up.sh"
 
 # change port
 wget -O port-ssl "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/port/port-ssl.sh"
