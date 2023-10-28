@@ -1,7 +1,7 @@
 <p align="center">
 
 # XRAY MULTI PORT MOD BY ANDI64
-- ***Script XRAY Multi Port 443/80***
+- ***Script SSH XRAY Multi Port 443/80***
 
 #
 
