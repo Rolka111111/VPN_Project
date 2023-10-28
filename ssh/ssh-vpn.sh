@@ -272,30 +272,15 @@ wget -O user-unlock "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ss
 wget -O port-ssl "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/port/port-ssl.sh"
 wget -O port-ovpn "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/port/port-ovpn.sh"
 
-
-wget -O xp "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/xp.sh"
 wget -O acs-set "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/acs-set.sh"
 
 wget -O sshws "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/sshws.sh"
 wget -O status "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/status.sh"
-wget -O menu-backup "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/menu-backup.sh"
-wget -O backup "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/backup/backup.sh"
-wget -O restore "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/backup/restore.sh"
 wget -O set-br "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/backup/set-br.sh"
 
 wget -O jam "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/jam.sh"
 
 chmod +x *
-chmod +x add-bot-panel
-chmod +x menu
-chmod +x shadowsocks
-chmod +x menu-trial
-chmod +x menu-vmess
-chmod +x menu-vless
-chmod +x running
-chmod +x clearcache
-chmod +x menu-trgo
-chmod +x menu-trojan
 
 chmod +x menu-ssh
 chmod +x usernew
