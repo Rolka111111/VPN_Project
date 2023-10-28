@@ -33,6 +33,7 @@ fi
 akbarvpn="https://raw.githubusercontent.com/owl64/VPN_Project/master/backup"
 akbarvpnn="https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updated"
 akbarvpnnn="https://raw.githubusercontent.com/owl64/VPN_Project/master/updated"
+sshmenu="https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh"
 cd
 rm -r updatedll
 wget -O updatedll "https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updatedll.sh"
@@ -100,6 +101,10 @@ wget -O trialvless "${akbarvpnnn}/trialvless.sh"
 wget -O resetlog "${akbarvpnnn}/resetlog.sh"
 wget -O cekdetailss "${akbarvpnnn}/cekdetailss.sh"
 wget -O addaccountvmess "${akbarvpnnn}/addaccountvmess.sh"
+
+#SSH CDN Menu
+wget -O addaccountssh "${akbarvpnnn}/usernew.sh"
+
 #
 chmod +x /usr/bin/updatedll
 chmod +x updatedll
@@ -144,6 +149,10 @@ chmod +x trialvless
 chmod +x resetlog
 chmod +x cekdetailss
 chmod +x addaccountvmess
+
+#Menu SSH
+chmod +x addaccountssh
+
 # Update Backup
 chmod +x addemail
 chmod +x autobackup
