@@ -103,7 +103,7 @@ wget -O cekdetailss "${akbarvpnnn}/cekdetailss.sh"
 wget -O addaccountvmess "${akbarvpnnn}/addaccountvmess.sh"
 
 #SSH CDN Menu
-wget -O addaccountssh "${akbarvpnnn}/usernew.sh"
+wget -O addaccountssh "${sshmenu}/usernew.sh"
 
 #
 chmod +x /usr/bin/updatedll
