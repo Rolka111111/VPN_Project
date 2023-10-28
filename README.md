@@ -5,6 +5,12 @@
 
 #
 
+# SSH CDN WS
+- Dropbear      :80, 8080
+- SSL/ TLS      :443, 8443
+- OpenVPN       :22
+
+
 # FITUR XRAY TLS DAN NON TLS
 - TROJAN WS        : **443**/**80**
 - TROJAN GRPC      : **443**/**80**
