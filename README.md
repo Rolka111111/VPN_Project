@@ -6,12 +6,16 @@
 #
 
 # SSH CDN WS
-- Dropbear      :80, 8080
-- SSL/ TLS      :443, 8443
-- OpenVPN       :22
-
+...
+- SSH WS / TLS 443
+- SSH NON TLS 80
+- SSH UDP 1-65535
+- OVPN SSL/TCP 1194
+- SLOWDNS 5300
+...
 
 # FITUR XRAY TLS DAN NON TLS
+...
 - TROJAN WS        : **443**/**80**
 - TROJAN GRPC      : **443**/**80**
 - SHADOWSOCKS WS   : **443**/**80**
@@ -20,6 +24,7 @@
 - VMESS GRPC       : **443**/**80**
 - VLESS WS         : **443**/**80**
 - VLESS GRPC       : **443**/**80**
+...
 
 # MOD List & Updated
 - Pengoptimalan Menu
