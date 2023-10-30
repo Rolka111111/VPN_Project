@@ -11,7 +11,7 @@ source /etc/os-release
 ver=$VERSION_ID
 
 # simple password minimal
-curl -sS https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
+curl -sS https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -116,7 +116,7 @@ install_ssl(){
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/newudpgw"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh/newudpgw"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -225,13 +225,13 @@ echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 # banner /etc/issue.net
 sleep 1
 echo -e "[ ${green}INFO$NC ] Settings banner"
-wget -q -O /etc/issue.net "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/issue.net"
+wget -q -O /etc/issue.net "https://raw.githubusercontent.com/owl64/VPN_Project/master/issue.net"
 chmod +x /etc/issue.net
 echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 #install bbr dan optimasi kernel
-wget https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
@@ -250,77 +250,18 @@ iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save
 netfilter-persistent reload
 
-# download script
-cd /usr/bin
-
-# menu ssh ovpn
-wget -O menu-ssh "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/menu/menu-ssh.sh"
-wget -O usernew "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/trial.sh"
-wget -O renew "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/renew.sh"
-wget -O hapus "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/hapus.sh"
-wget -O cek "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/cek.sh"
-wget -O member "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/member.sh"
-wget -O delete "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/delete.sh"
-wget -O autokill "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/tendang.sh"
-wget -O user-lock "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/user-lock.sh"
-wget -O user-unlock "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/user-unlock.sh"
-
 # change port
-wget -O port-ssl "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/port/port-ssl.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/port/port-ovpn.sh"
+#wget -O port-ssl "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/port/port-ssl.sh"
+#wget -O port-ovpn "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/port/port-ovpn.sh"
 
-wget -O acs-set "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/acs-set.sh"
+#wget -O acs-set "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/acs-set.sh"
 
-wget -O sshws "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/sshws.sh"
-wget -O status "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/status.sh"
-wget -O set-br "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/backup/set-br.sh"
+#wget -O sshws "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/sshws.sh"
+#wget -O status "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/status.sh"
+#wget -O set-br "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/backup/set-br.sh"
 
-wget -O jam "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/jam.sh"
+#wget -O jam "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/jam.sh"
 
-chmod +x *
-
-chmod +x menu-ssh
-chmod +x usernew
-chmod +x trial
-chmod +x renew
-chmod +x hapus
-chmod +x cek
-chmod +x member
-chmod +x delete
-chmod +x autokill
-chmod +x ceklim
-chmod +x tendang
-chmod +x up
-chmod +x user-lock
-chmod +x user-unlock
-
-chmod +x menu-set
-chmod +x menu-domain
-chmod +x add-host
-chmod +x port-change
-chmod +x certv2ray
-chmod +x menu-webmin
-chmod +x speedtest
-chmod +x about
-chmod +x auto-reboot
-chmod +x restart
-chmod +x bw
-
-chmod +x port-ssl
-chmod +x port-ovpn
-
-chmod +x xp
-chmod +x acs-set
-chmod +x sshws
-chmod +x status
-chmod +x menu-backup
-chmod +x backup
-chmod +x restore
-chmod +x set-br
-chmod +x jam
 cd
 
 #Settings Cron

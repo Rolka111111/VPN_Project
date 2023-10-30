@@ -128,6 +128,8 @@ apt install zlib1g-dev -y
 apt install libssl-dev -y
 apt install libssl1.0-dev -y
 apt install dos2unix -y
+curl -sSL https://deb.nodesource.com/setup_16.x | bash - 
+sudo apt-get install nodejs -y
 
 #
 # install

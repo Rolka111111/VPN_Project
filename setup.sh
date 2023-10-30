@@ -38,6 +38,11 @@ wget https://raw.githubusercontent.com/owl64/VPN_Project/master/install-tools.sh
 #
 #Instal Xray
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/install-xray.sh && chmod +x install-xray.sh && ./install-xray.sh
+
+#Install SSH WS
+wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+
 #install xmenu
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updatedll.sh && chmod +x updatedll.sh && ./updatedll.sh
 #install Backup

@@ -103,7 +103,19 @@ wget -O cekdetailss "${akbarvpnnn}/cekdetailss.sh"
 wget -O addaccountvmess "${akbarvpnnn}/addaccountvmess.sh"
 
 #SSH CDN Menu
-wget -O addaccountssh "${sshmenu}/usernew.sh"
+wget -O usernew "${sshmenu}/usernew.sh"
+wget -O trial "${sshmenu}/trial.sh"
+wget -O renew "${sshmenu}/renew.sh"
+wget -O hapus "${sshmenu}/hapus.sh"
+wget -O cek "${sshmenu}/cek.sh"
+wget -O member "${sshmenu}/member.sh"
+wget -O delete "${sshmenu}/delete.sh"
+wget -O autokill "${sshmenu}/autokill.sh"
+wget -O ceklim "${sshmenu}/ceklim.sh"
+wget -O tendang "${sshmenu}/tendang.sh"
+wget -O user-lock "${sshmenu}/user-lock.sh"
+wget -O user-unlock "${sshmenu}/user-unlock.sh"
+wget -O sshws "${sshmenu}/sshws.sh"
 
 #
 chmod +x /usr/bin/updatedll
@@ -151,7 +163,19 @@ chmod +x cekdetailss
 chmod +x addaccountvmess
 
 #Menu SSH
-chmod +x addaccountssh
+chmod +x usernew
+chmod +x trial
+chmod +x renew
+chmod +x hapus
+chmod +x cek
+chmod +x member
+chmod +x delete
+chmod +x autokill
+chmod +x ceklim
+chmod +x tendang
+chmod +x up
+chmod +x user-lock
+chmod +x user-unlock
 
 # Update Backup
 chmod +x addemail
