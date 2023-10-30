@@ -50,6 +50,7 @@ wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ohp/ohp.sh && ch
 
 #install xmenu
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updatedll.sh && chmod +x updatedll.sh && ./updatedll.sh
+
 #install Backup
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #
