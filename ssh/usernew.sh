@@ -99,7 +99,7 @@ fi
 echo "#ssh# ${Login} ${Pass} ${Quota} ${expe}" >>/etc/ssh/.ssh.db
 clear
 
-cat > /var/www/html/ssh-$Login.txt <<-END
+cat > /home/vps/public_html/ssh-$Login.txt <<-END
 ◇━━━━━━━━━━━━━━━━━◇
 Y O G Z  P R O J E C T 
 ◇━━━━━━━━━━━━━━━━━◇
