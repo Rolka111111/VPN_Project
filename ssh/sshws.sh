@@ -15,7 +15,7 @@ wget -q -O /usr/bin/proxy3.js "https://raw.githubusercontent.com/owl64/VPN_Proje
 cat <<EOF> /etc/systemd/system/sshws.service
 [Unit]
 Description=WSenabler
-Documentation=bahenol
+Documentation=https://github.com/xtls
 
 [Service]
 Type=simple
