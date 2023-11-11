@@ -125,10 +125,11 @@ wget -O sshws "${sshmenu}/sshws.sh"
 wget -O statussshws "${sshmenu}/status.sh"
 
 #Menu DNS
-wget -O google "${sshmenu}/google.sh"
-wget -O cisco "${sshmenu}/cisco.sh"
-wget -O adguard "${sshmenu}/adguard.sh"
-wget -O quad9 "${sshmenu}/quad9.sh"
+wget -O google "${menudns}/google.sh"
+wget -O cisco "${menudns}/cisco.sh"
+wget -O adguard "${menudns}/adguard.sh"
+wget -O quad9 "${menudns}/quad9.sh"
+wget -O statusdns "${menudns}/statusdns.sh"
 
 #
 chmod +x /usr/bin/updatedll
@@ -214,6 +215,7 @@ chmod +x google
 chmod +x cisco
 chmod +x adguard
 chmod +x quad9
+chmod +x statusdns
 
 clear
 echo -e "Update Selesai..."

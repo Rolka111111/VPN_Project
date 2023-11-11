@@ -30,7 +30,8 @@ echo -e "$BLUE ➣$NC [1$NC]. DNS GOOGLE               $BLUE"
 echo -e "$BLUE ➣$NC [2$NC]. DNS CISCO $BLUE"
 echo -e "$BLUE ➣$NC [3$NC]. DNS ADGUARD $BLUE"
 echo -e "$BLUE ➣$NC [4$NC]. DNS QUAD9 $BLUE"
-echo -e "$BLUE ➣$NC [5$NC]. Back $BLUE"
+echo -e "$BLUE ➣$NC [5$NC]. STATUS DNS $BLUE"
+echo -e "$BLUE ➣$NC [6$NC]. Back $BLUE"
 echo -e "$BLUE ---------------------------------------"
 echo -e "$BLUE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$NC"
 case $menu in
@@ -47,5 +48,8 @@ adguard
 quad9
 ;;
 5)
+statusdns
+;;
+6)
 msetting
 ;;
