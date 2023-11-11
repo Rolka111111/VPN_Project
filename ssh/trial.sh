@@ -108,9 +108,9 @@ echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m"
 echo -e "Payload WSS" | tee -a /etc/log-create-user.log  
 echo -e "GET / HTTP/1.1[crlf]Host: $domen[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "OVPN Download : https://$domen:81/" | tee -a /etc/log-create-user.log
+echo -e "OVPN Download : https://$domen:89/" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Save Link Account: https://$domen:81/ssh-$Login.txt" | tee -a /etc/log-create-user.log
+echo -e "Save Link Account: https://$domen:89/ssh-$Login.txt" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 fi
 echo ""

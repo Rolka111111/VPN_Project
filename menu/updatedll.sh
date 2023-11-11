@@ -117,6 +117,7 @@ wget -O tendang "${sshmenu}/tendang.sh"
 wget -O user-lock "${sshmenu}/user-lock.sh"
 wget -O user-unlock "${sshmenu}/user-unlock.sh"
 wget -O sshws "${sshmenu}/sshws.sh"
+wget -O statussshws "${sshmenu}/status.sh"
 
 #
 chmod +x /usr/bin/updatedll
@@ -178,6 +179,7 @@ chmod +x tendang
 chmod +x up
 chmod +x user-lock
 chmod +x user-unlock
+chmod +x statussshws
 
 # Update Backup
 chmod +x addemail
