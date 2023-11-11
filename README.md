@@ -60,6 +60,7 @@
 - Debian 9 (HVM)
 - Debian 10
 - Ubuntu 18
+- UBUNTU 20.04.05
 * Berhasil di gunakan di vps aws dan os debian 9 hvm
 
 # Syarat & Bahan Untuk Menggunakan Script Ini
