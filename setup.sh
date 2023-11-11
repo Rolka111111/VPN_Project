@@ -56,7 +56,10 @@ wget https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updatedll.s
 
 #install Backup
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
-#
+
+#Install Limit For Xray
+wget https://raw.githubusercontent.com/owl64/VPN_Project/master/limit/limit.sh && chmod +x limit.sh && ./limit.sh
+
 #SELESAI
 # collor status
 error1="${RED} [ERROR] ${NC}"
