@@ -15,12 +15,11 @@ OK="${GREEN}[OK]${NC}"
 Error="${RED}[Mistake]${NC}"
 clear
 echo -e "${OK}Sedang Melakukan Reset Harap Tunggu...."
+sleep 3
+
 #Pindah Direktori
 cd /var/log/xray/
-rm access.log
-#Buat File Log Kosong
-touch /var/log/xray/access.log
-chown www-data.www-data /var/log/xray/access.log
+
+#Kosongkan File
+truncate -s 0 access.log
 echo "${OK}Reset Berhasil.."
-sleep 3
-restart-xray

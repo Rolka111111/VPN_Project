@@ -128,6 +128,16 @@ apt install zlib1g-dev -y
 apt install libssl-dev -y
 apt install libssl1.0-dev -y
 apt install dos2unix -y
+apt install squid3 -y
+apt install openssl -y
+apt install openvpn -y
+apt install tmux -y
+apt install easy-rsa -y
+apt install fail2ban -y
+apt install stunnel4 -y
+apt install dropbear -y
+apt install libsqlite3-dev -y
+
 curl -sSL https://deb.nodesource.com/setup_16.x | bash - 
 sudo apt-get install nodejs -y
 
