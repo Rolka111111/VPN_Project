@@ -51,7 +51,8 @@ echo -e "$BLUE━━━━━━━━━━━━━━━━━━━━━━
 echo -e "$BRED             [ System Update ]            $NC"
 echo -e "$BLUE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$NC"
 echo -e "$BLUE ➣$NC [11$NC]. Update SC                  $BLUE"
-echo -e "$BLUE ➣$NC [12$NC]. Exit                       $BLUE"
+echo -e "$BLUE ➣$NC [12$NC]. Change Xray MOD            $BLUE"
+echo -e "$BLUE ➣$NC [13$NC]. Exit                       $BLUE"
 echo -e "$BLUE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$NC"
 echo -e "$BLUE ➣$NC Sc Version 1.0.1                     $BLUE"
 echo -e "$BLUE ➣$NC Mod Menu by andi64                   $BLUE"
@@ -94,6 +95,9 @@ mbandwith
 update
 ;;
 12)
+xraymod
+;;
+13)
 clear
 exit
 ;;

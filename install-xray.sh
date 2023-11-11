@@ -83,6 +83,7 @@ chown www-data.www-data $domainSock_dir
 # Make Folder XRay
 mkdir -p /var/log/xray
 mkdir -p /etc/xray
+mkdir /backup >> /dev/null 2>&1
 chown www-data.www-data /var/log/xray
 chmod +x /var/log/xray
 touch /var/log/xray/access.log
@@ -91,6 +92,15 @@ touch /var/log/xray/access2.log
 touch /var/log/xray/error2.log
 # / / Ambil Xray Core Version Terbaru
 bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install -u www-data --version 1.5.6
+cp /usr/local/bin/xray /backup/xray.official.backup
+
+#Ambil xray MOD
+echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Xray-core mod${NC}"
+sleep 0.5
+wget -q -O /backup/xray.mod.backup "https://github.com/dharak36/Xray-core/releases/download/v1.0.0/xray.linux.64bit"
+echo -e "${GB}[ INFO ]${NC} ${YB}Download Xray-core done${NC}"
+sleep 1
+cd
 
 ## crt xray
 systemctl stop nginx

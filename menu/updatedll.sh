@@ -35,6 +35,7 @@ akbarvpnn="https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updat
 akbarvpnnn="https://raw.githubusercontent.com/owl64/VPN_Project/master/updated"
 sshmenu="https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh"
 menudns="https://raw.githubusercontent.com/owl64/VPN_Project/master/dns"
+xraymod="https://raw.githubusercontent.com/owl64/VPN_Project/master/xray"
 cd
 rm -r updatedll
 wget -O updatedll "https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updatedll.sh"
@@ -130,6 +131,9 @@ wget -O cisco "${menudns}/cisco.sh"
 wget -O adguard "${menudns}/adguard.sh"
 wget -O quad9 "${menudns}/quad9.sh"
 wget -O statusdns "${menudns}/statusdns.sh"
+
+#Xray Mod
+wget -O xraymod "${menudns}/xraymod.sh"
 
 #
 chmod +x /usr/bin/updatedll
