@@ -103,6 +103,14 @@ else
     status_ws_epro="${RED}No Running${NC} ( Eror )"
 fi
 
+# STATUS SERVICE  FAIL2BAN
+fail2ban_service=$(/etc/init.d/fail2ban status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+if [[ $fail2ban_service == "running" ]]; then 
+   status_fail2ban=" ${GREEN}Running ${NC}( No Error )"
+else
+   status_fail2ban="${RED}  Not Running ${NC}  ( Error )"
+fi
+
 # =========================================================================================================
 
 # // Running Function Requirement
@@ -149,6 +157,7 @@ echo -e "SSH / TUN           = $status_ssh"
 echo -e "OpenSSH             = $status_openssh"
 echo -e "OpenVPN             = $status_openvpn"
 echo -e "Dropbear            = $status_dropbear"
+echo -e "Fail2Ban            = $status_fail2ban"
 echo -e "Stunnel5            = $status_stunnel5"
 echo -e "Squid               = $status_squid"
 echo -e "SSH NonTLS          = $status_ws_epro"
