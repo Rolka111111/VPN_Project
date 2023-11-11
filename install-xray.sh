@@ -162,7 +162,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
          "network": "ws",
             "wsSettings": {
-                "path": "/vmess/"
+                "path": "/"
           }
         }
      },
@@ -415,10 +415,13 @@ cat >/etc/nginx/conf.d/xray.conf <<EOF
              root /home/vps/public_html;
         }
 EOF
-sed -i '$ ilocation = /xrayws' /etc/nginx/conf.d/xray.conf
-sed -i '$ i{' /etc/nginx/conf.d/xray.conf
+
+sed -i '$ ilocation / {' /etc/nginx/conf.d/xray.conf
+sed -i '$ iif ($http_upgrade != "Upgrade") {' /etc/nginx/conf.d/xray.conf
+sed -i '$ irewrite /(.*) /vmess/ break;' /etc/nginx/conf.d/xray.conf 
+sed -i '$ i}' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_redirect off;' /etc/nginx/conf.d/xray.conf
-sed -i '$ iproxy_pass http://unix:/run/xray/vless_ws.sock;' /etc/nginx/conf.d/xray.conf
+sed -i '$ iproxy_pass http://unix:/run/xray/vmess_ws.sock;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_http_version 1.1;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_set_header X-Real-IP \$remote_addr;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;' /etc/nginx/conf.d/xray.conf
@@ -427,10 +430,10 @@ sed -i '$ iproxy_set_header Connection "upgrade";' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_set_header Host \$http_host;' /etc/nginx/conf.d/xray.conf
 sed -i '$ i}' /etc/nginx/conf.d/xray.conf
 
-sed -i '$ ilocation = /vmess/' /etc/nginx/conf.d/xray.conf
+sed -i '$ ilocation = /xrayws' /etc/nginx/conf.d/xray.conf
 sed -i '$ i{' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_redirect off;' /etc/nginx/conf.d/xray.conf
-sed -i '$ iproxy_pass http://unix:/run/xray/vmess_ws.sock;' /etc/nginx/conf.d/xray.conf
+sed -i '$ iproxy_pass http://unix:/run/xray/vless_ws.sock;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_http_version 1.1;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_set_header X-Real-IP \$remote_addr;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;' /etc/nginx/conf.d/xray.conf
