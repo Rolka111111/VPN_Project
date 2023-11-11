@@ -13,7 +13,7 @@ LIGHT='\033[0;37m'
 # Getting
 domain1=$(cat /etc/xray/domain)
 MYIP=$(wget -qO- ipinfo.io/ip);
-NUMBER_OF_CLIENTS=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 2 | wc -l)
+NUMBER_OF_CLIENTS=$(grep -E "^#vms# " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 2 | wc -l)
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 		echo ""
 		echo "You have no existing clients!"
@@ -36,7 +36,7 @@ NUMBER_OF_CLIENTS=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut 
 		fi
 	done
 clear
-user=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
+user=$(grep -E "^#vms# " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 uuid=$(grep -o '"id": "[^"]*' /etc/xray/vmess-$user-tls.json | grep -o '[^"]*$')
 ## ubah config ke base64
 vmess_base641=$( base64 -w 0 <<< $vmess_json1 )
