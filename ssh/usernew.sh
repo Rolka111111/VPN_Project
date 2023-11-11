@@ -101,7 +101,7 @@ clear
 
 cat > /home/vps/public_html/ssh-$Login.txt <<-END
 ◇━━━━━━━━━━━━━━━━━◇
-Y O G Z  P R O J E C T 
+S D C   P R O J E C T
 ◇━━━━━━━━━━━━━━━━━◇
 
 Format SSH OVPN Account
@@ -130,7 +130,7 @@ Berakhir Pada    : $expe
 ◇━━━━━━━━━━━━━━━━━◇
 Payload WSS: GET wss://BUG.COM/ HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf] 
 ◇━━━━━━━━━━━━━━━━━◇
-OVPN Download : https://$domain:81/
+OVPN Download : https://$domain:89/
 ◇━━━━━━━━━━━━━━━━━◇
 
 END
@@ -158,9 +158,9 @@ TEXT="
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 <code>Payload WSS      : </code><code>GET wss://BUG.COM/ HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf]</code>
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
-OVPN Download : https://$domain:81/
+OVPN Download : https://$domain:89/
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
-<code>Save Link Account: </code>https://$domain:81/ssh-$Login.txt
+<code>Save Link Account: </code>https://$domain:89/ssh-$Login.txt
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 Aktif Selama         : $masaaktif Hari
 Dibuat Pada          : $tnggl
@@ -168,7 +168,6 @@ Berakhir Pada        : $expe
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
 "
 
-curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 echo ""
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo -e "SSH OVPN Account" | tee -a /etc/log-create-user.log
@@ -176,6 +175,7 @@ echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m"
 echo -e "Username    : $Login" | tee -a /etc/log-create-user.log
 echo -e "Password    : $Pass" | tee -a /etc/log-create-user.log
 echo -e "Limit IP    : $iplimit" | tee -a /etc/log-create-user.log
+echo -e "Limit Qouta : $Quota" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo -e "HOST        : $domain" | tee -a /etc/log-create-user.log
 echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-user.log
@@ -197,9 +197,9 @@ echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m"
 echo -e "Payload WSS" | tee -a /etc/log-create-user.log  
 echo -e "GET / HTTP/1.1[crlf]Host: $domain[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "OVPN Download : https://$domain:81/" | tee -a /etc/log-create-user.log
+echo -e "OVPN Download : https://$domain:89/" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Save Link Account: https://$domain:81/ssh-$Login.txt" | tee -a /etc/log-create-user.log
+echo -e "Save Link Account: https://$domain:89/ssh-$Login.txt" | tee -a /etc/log-create-user.log
 echo -e "\e[33m◇━━━━━━━━━━━━━━━━━◇\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Aktif Selama  : $masaaktif Hari" | tee -a /etc/log-create-user.log
 echo -e "Dibuat Pada   : $tnggl" | tee -a /etc/log-create-user.log
