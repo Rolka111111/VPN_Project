@@ -35,7 +35,8 @@ echo -e "$BRED             [ SSH Setings ]            $NC"
 echo -e "$BLUE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$NC"
 echo -e "$BLUE ➣$NC [1$NC]. Cek Status SSH                  $BLUE"
 echo -e "$BLUE ➣$NC [2$NC]. Seting SSH WS                  $BLUE"
-echo -e "$BLUE ➣$NC [3$NC]. Back                  $BLUE"
+echo -e "$BLUE ➣$NC [3$NC]. Ubah Banner SSH                  $BLUE"
+echo -e "$BLUE ➣$NC [4$NC]. Back                  $BLUE"
 echo -e "$BLUE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$NC"
 read -p "Select From Options [ 1 - 3 ] : " menu
 echo -e ""
@@ -47,5 +48,8 @@ statussshws
 sshws
 ;;
 3)
+nano /etc/issue.net
+;;
+4)
 mssh
 ;;
