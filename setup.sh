@@ -47,7 +47,6 @@ wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh/ssh-vpn.sh &
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ohp/ohp-dropbear.sh && chmod +x ohp-dropbear.sh && ./ohp-dropbear.sh
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ohp/ohp-ssh.sh && chmod +x ohp-ssh.sh && ./ohp-ssh.sh
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ohp/ohp.sh && chmod +x ohp.sh && ./ohp.sh
-#wget -O sshws "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/sshws.sh"
 
 #install OVPN
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh/vpn.sh && chmod +x vpn.sh && ./vpn.sh
