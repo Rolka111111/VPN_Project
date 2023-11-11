@@ -26,7 +26,7 @@ echo -e "$BLUE╠➣$NC 2$NC. Cek Bandwith VPS    $BLUE      ║ "
 echo -e "$BLUE╠➣$NC 3$NC. Menu        $BLUE      ║ "
 echo -e "$BLUE║---------------------------------------║"
 echo -e "$BLUE╚═══════════════════════════════════════╝$NC"
-read -p "Select From Options [ 1 - 9 ] : " menu
+read -p "Select From Options [ 1 - 3 ] : " menu
 echo -e ""
 case $menu in
 1)
