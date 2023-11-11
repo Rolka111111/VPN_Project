@@ -44,6 +44,25 @@ export RED_BG='\e[41m'
 
 # // Exporting IP Address
 export IP=$( curl -s https://ipinfo.io/ip/ )
+
+# STATUS SERVICE  SSH
+ssh_service=$(/etc/init.d/ssh status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+if [[ $ssh_service == "running" ]]; then 
+   status_ssh=" ${GREEN}Running ${NC}( No Error )"
+else
+   status_ssh="${RED}  Not Running ${NC}  ( Error )"
+fi
+
+# STATUS SERVICE OPENVPN
+openvpn_service="$(systemctl show openvpn.service --no-page)"
+oovpn=$(echo "${openvpn_service}" | grep 'ActiveState=' | cut -f2 -d=)
+status_openvp=$(/etc/init.d/openvpn status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+if [[ $oovpn == "active" ]]; then
+  status_openvpn=" ${GREEN}Running ${NC}( No Error )"
+else
+  status_openvpn="${RED}  Not Running ${NC}  ( Error )"
+fi
+
 # // OpenSSH
 openssh=$( systemctl status ssh | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $openssh == "running" ]]; then
@@ -126,7 +145,9 @@ echo -e "Current Time        = $( date -d "0 days" +"%d-%m-%Y | %X" )"
 echo ""
 
 echo -e "${RED_BG}                     Service Information                  ${NC}"
+echo -e "SSH / TUN           = $status_ssh"
 echo -e "OpenSSH             = $status_openssh"
+echo -e "OpenVPN             = $status_openvpn"
 echo -e "Dropbear            = $status_dropbear"
 echo -e "Stunnel5            = $status_stunnel5"
 echo -e "Squid               = $status_squid"
