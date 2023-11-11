@@ -34,6 +34,7 @@ akbarvpn="https://raw.githubusercontent.com/owl64/VPN_Project/master/backup"
 akbarvpnn="https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updated"
 akbarvpnnn="https://raw.githubusercontent.com/owl64/VPN_Project/master/updated"
 sshmenu="https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh"
+menudns="https://raw.githubusercontent.com/owl64/VPN_Project/master/dns"
 cd
 rm -r updatedll
 wget -O updatedll "https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updatedll.sh"
@@ -121,6 +122,12 @@ wget -O user-unlock "${sshmenu}/user-unlock.sh"
 wget -O sshws "${sshmenu}/sshws.sh"
 wget -O statussshws "${sshmenu}/status.sh"
 
+#Menu DNS
+wget -O google "${sshmenu}/google.sh"
+wget -O cisco "${sshmenu}/cisco.sh"
+wget -O adguard "${sshmenu}/adguard.sh"
+wget -O quad9 "${sshmenu}/quad9.sh"
+
 #
 chmod +x /usr/bin/updatedll
 chmod +x updatedll
@@ -196,6 +203,12 @@ chmod +x startbackup
 chmod +x stopbackup
 chmod +x strt
 chmod +x testsend
+
+# DNS Menu
+chmod +x google
+chmod +x cisco
+chmod +x adguard
+chmod +x quad9
 
 clear
 echo -e "Update Selesai..."
