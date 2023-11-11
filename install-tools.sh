@@ -137,6 +137,30 @@ apt install fail2ban -y
 apt install stunnel4 -y
 apt install dropbear -y
 apt install libsqlite3-dev -y
+#Tools For DNS
+apt install resolvconf network-manager dnsutils bind9 -y
+
+#Google DNS
+cat > /etc/systemd/resolved.conf << END
+[Resolve]
+DNS=8.8.8.8 8.8.4.4
+Domains=~.
+ReadEtcHosts=yes
+END
+systemctl enable resolvconf
+systemctl enable systemd-resolved
+systemctl enable NetworkManager
+rm -rf /etc/resolv.conf
+rm -rf /etc/resolvconf/resolv.conf.d/head
+echo "
+nameserver 127.0.0.53
+" >> /etc/resolv.conf
+echo "
+" >> /etc/resolvconf/resolv.conf.d/head
+systemctl restart resolvconf
+systemctl restart systemd-resolved
+systemctl restart NetworkManager
+echo "Google DNS" > /user/current
 
 curl -sSL https://deb.nodesource.com/setup_16.x | bash - 
 sudo apt-get install nodejs -y
