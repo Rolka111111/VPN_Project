@@ -42,6 +42,7 @@
 - Add Anti DDOS
 - Detect Multi Login
 - Add Limit Kuota Per Akun
+- Add DNS Changer
 - Update User Login
 - Support Method Enchanced
 - Restore Akun yang terhapus
