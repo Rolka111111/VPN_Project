@@ -44,6 +44,7 @@
 - Add Limit Kuota Per Akun
 - Add DNS Changer
 - Update User Login
+- Multipath (vmess)
 - Support Method Enchanced
 - Restore Akun yang terhapus
 - Fix Bug Backup and Restore
