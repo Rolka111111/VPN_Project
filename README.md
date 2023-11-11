@@ -52,6 +52,7 @@
 - fix Bug add Trojan
 - fix Bug Auto Delete
 - fix Bug SSh WS
+- fix Bug OVPN Port Closed
 
 # OS 
 - Debian 9 (HVM)
