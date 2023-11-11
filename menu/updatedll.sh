@@ -73,6 +73,8 @@ wget -O pxrayvmess "${akbarvpnn}/pxrayvmess.sh"
 wget -O mbackup "${akbarvpnn}/mbackup.sh"
 wget -O mbandwith "${akbarvpnn}/mbandwith.sh"
 wget -O mssh "${akbarvpnn}/mssh.sh"
+wget -O sshws "${akbarvpnn}/sshws.sh"
+
 # update xray menu
 wget -O addvmess "${akbarvpnnn}/addvmess.sh"
 wget -O dellvmess "${akbarvpnnn}/dellvmess.sh"
@@ -135,6 +137,7 @@ chmod +x pxrayvless
 chmod +x pxrayvmess
 chmod +x mbackup
 chmod +x mssh
+chmod +x sshws
 # update xray menu
 chmod +x addvmess
 chmod +x dellvmess
