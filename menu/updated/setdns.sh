@@ -23,54 +23,29 @@ Error = "$ {
 }"
 clear
 echo -e "$BLUE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$NC"
-echo -e "$BLUE           $ORANGE ✶ Setting Menu ✶ $BLUE   "
+echo -e "$BLUE           $ORANGE ✶ DNS SETINGS ✶ $BLUE   "
 echo -e "$BLUE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$NC"
 echo -e "$BLUE ---------------------------------------"
-echo -e "$BLUE ➣$NC [1$NC]. Change Domain               $BLUE"
-echo -e "$BLUE ➣$NC [2$NC]. Change Port XRAYS WS/GRPC & HTTP$BLUE" 
-echo -e "$BLUE ➣$NC [3$NC]. Cek Bandwith Server         $BLUE"
-echo -e "$BLUE ➣$NC [4$NC]. System Backup & Restore     $BLUE"
-echo -e "$BLUE ➣$NC [5$NC]. Rennew Cert                 $BLUE" 
-echo -e "$BLUE ➣$NC [6$NC]. Reset Log Xray              $BLUE"
-echo -e "$BLUE ➣$NC [7$NC]. Setings SSH               $BLUE"
-echo -e "$BLUE ➣$NC [8$NC]. DNS Setings               $BLUE"
-echo -e "$BLUE ➣$NC [9$NC]. Back to Menu                $BLUE" 
+echo -e "$BLUE ➣$NC [1$NC]. DNS GOOGLE               $BLUE"
+echo -e "$BLUE ➣$NC [2$NC]. DNS CISCO $BLUE"
+echo -e "$BLUE ➣$NC [3$NC]. DNS ADGUARD $BLUE"
+echo -e "$BLUE ➣$NC [4$NC]. DNS QUAD9 $BLUE"
+echo -e "$BLUE ➣$NC [5$NC]. Back $BLUE"
 echo -e "$BLUE ---------------------------------------"
 echo -e "$BLUE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$NC"
-read -p "Select From Options [ 1 - 8 ] : " menu
-echo -e ""
 case $menu in
 1)
-chngedomain
+google
 ;;
 2)
-chngeport
+cisco
 ;;
 3)
-vnstat
+adguard
 ;;
 4)
-mbackup
+quad9
 ;;
 5)
-certxray
-;;
-6)
-resetlog
-;;
-7)
-sshws
-;;
-8)
-setdns
-;;
-9)
-clear
-menu
-;;
-*)
-clear
 msetting
 ;;
-esac
-#
