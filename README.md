@@ -39,6 +39,7 @@
 - Add Port Http & Https
 - Add Usage Kuota Per Akun Vmess (only)
 - Add Lock User SSH
+- Add Anti DDOS
 - Detect Multi Login
 - Add Limit Kuota Per Akun
 - Update User Login
