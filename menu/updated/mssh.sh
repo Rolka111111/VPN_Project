@@ -30,10 +30,10 @@ ORANGE='\033[0;33m'
 LIGHT='\033[0;37m'
 grenbo="\e[92;1m"
 
-echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "$BLUE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$NC"
 echo -e "                SSH & OpenVPN           "
-echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
-echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
+echo -e "$BLUE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$NC"
+echo -e "$BLUE ---------------------------------------------------"
 echo -e "  ${ORANGE}[1].${NC}\033[0;36m Create SSH & OpenVPN Account${NC}"
 echo -e "  ${ORANGE}[2].${NC}\033[0;36m Trial SSH & OpenVPN ${NC}"
 echo -e "  ${ORANGE}[3].${NC}\033[0;36m Renew SSH & OpenVPN ${NC}"
@@ -46,7 +46,8 @@ echo -e "  ${ORANGE}[9].${NC}\033[0;36m Cek User Multi Login SSH ${NC}"
 echo -e " ${ORANGE}[10].${NC}\033[0;36m Lock Account User ${NC}"
 echo -e " ${ORANGE}[11].${NC}\033[0;36m Unlock Account User ${NC}"
 echo -e " ${ORANGE}[12].${NC}\033[0;36m Exit ${NC}"
-echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
+echo -e "$BLUE ---------------------------------------------------"
+echo -e "$BLUE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$NC"
 read -p "Select From Options [ 1 - 12 ] : " menu
 echo -e ""
 case $menu in
