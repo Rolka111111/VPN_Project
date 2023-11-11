@@ -49,6 +49,9 @@ wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ohp/ohp-ssh.sh &
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ohp/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 #wget -O sshws "https://raw.githubusercontent.com/YOGZKNTL/scupdate/main/ssh/sshws.sh"
 
+#install OVPN
+wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh/vpn.sh && chmod +x vpn.sh && ./vpn.sh
+
 #install xmenu
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updatedll.sh && chmod +x updatedll.sh && ./updatedll.sh
 
