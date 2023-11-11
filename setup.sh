@@ -38,10 +38,10 @@ wget https://raw.githubusercontent.com/owl64/VPN_Project/master/install-tools.sh
 #
 #Instal Xray
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/install-xray.sh && chmod +x install-xray.sh && ./install-xray.sh
+wget https://raw.githubusercontent.com/owl64/VPN_Project/master/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 
 #Install SSH WS
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
-wget https://raw.githubusercontent.com/owl64/VPN_Project/master/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 
 #install OHP
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ohp/ohp-dropbear.sh && chmod +x ohp-dropbear.sh && ./ohp-dropbear.sh
