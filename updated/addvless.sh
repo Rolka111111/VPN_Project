@@ -33,7 +33,7 @@ tls="$(cat ~/log-install.txt | grep -w "VLESS WS TLS" | cut -d: -f2|sed 's/ //g'
 nontls="$(cat ~/log-install.txt | grep -w "VLESS WS HTTP" | cut -d: -f2|sed 's/ //g')"
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
 		read -rp "Username : " -e user
-		user_EXISTS=$(grep -wE "^#### ${user}" "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 2 | wc -l)
+		user_EXISTS=$(grep -wE "^#vls# ${user}" "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 2 | wc -l)
 
 		if [[ ${user_EXISTS} -ge '1' ]]; then
 			echo ""
@@ -45,9 +45,9 @@ uuid=$(cat /proc/sys/kernel/random/uuid)
 read -p "Expired (Days) : " masaaktif
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
-sed -i '/#vless$/a\#### '"$user $exp"'\
+sed -i '/#vless$/a\#vls# '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
-sed -i '/#vlessgrpc$/a\#### '"$user $exp"'\
+sed -i '/#vlessgrpc$/a\#vls# '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
 xrayvless1="vless://${uuid}@${domain}:$tls?path=/xrayws&security=tls&encryption=none&type=ws#${user}"
 xrayvless2="vless://${uuid}@${domain}:$nontls?path=/xrayws&encryption=none&type=ws#${user}"
