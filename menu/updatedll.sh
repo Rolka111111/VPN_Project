@@ -63,6 +63,7 @@ wget -O startbackup "${akbarvpn}/startbackup.sh"
 wget -O stopbackup "${akbarvpn}/stopbackup.sh"
 wget -O strt "${akbarvpn}/strt.sh"
 wget -O testsend "${akbarvpn}/testsend.sh"
+
 # Update menu
 wget -O menu "${akbarvpnn}/menu.sh"
 wget -O msettings "${akbarvpnn}/msetting.sh"
@@ -75,6 +76,7 @@ wget -O mbackup "${akbarvpnn}/mbackup.sh"
 wget -O mbandwith "${akbarvpnn}/mbandwith.sh"
 wget -O mssh "${akbarvpnn}/mssh.sh"
 wget -O sshws "${akbarvpnn}/sshws.sh"
+wget -O setdns "${akbarvpnn}/setdns.sh"
 
 # update xray menu
 wget -O addvmess "${akbarvpnnn}/addvmess.sh"
@@ -133,6 +135,7 @@ chmod +x /usr/bin/updatedll
 chmod +x updatedll
 chmod +x restart-xray
 chmod +x cek-port
+
 # update menu
 chmod +x msettings
 chmod +x mbandwith
@@ -145,6 +148,8 @@ chmod +x pxrayvmess
 chmod +x mbackup
 chmod +x mssh
 chmod +x sshws
+chmod +x setdns
+
 # update xray menu
 chmod +x addvmess
 chmod +x dellvmess
