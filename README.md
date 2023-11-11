@@ -44,7 +44,7 @@
 - Add Limit Kuota Per Akun
 - Add DNS Changer
 - Update User Login
-- Multipath (vmess)
+- Multipath, Wajib pake Xray MOD (vmess)
 - Support Method Enchanced
 - Restore Akun yang terhapus
 - Fix Bug Backup and Restore
