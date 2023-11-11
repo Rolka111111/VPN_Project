@@ -37,15 +37,21 @@
 - Add Trafic Per User
 - Add Reset Log User
 - Add Port Http & Https
+- Add Usage Kuota Per Akun Vmess (only)
+- Add Lock User SSH
+- Detect Multi Login
+- Add Limit Kuota Per Akun
+- Update User Login
+- Support Method Enchanced
 - Restore Akun yang terhapus
 - Fix Bug Backup and Restore
 - Fix Bug add User ShadowShock
 - Fix Bug Achme SSL 
-- Fix Bug Cek User Login (8 jam Terbaru)
 - Fix Bug PHP (502 Bad Gateway)
 - Fix Bug Json VMess Tidak Terhapus
 - fix Bug add Trojan
-- dll
+- fix Bug Auto Delete
+- fix Bug SSh WS
 
 # OS 
 - Debian 9 (HVM)
