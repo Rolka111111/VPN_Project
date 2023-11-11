@@ -27,7 +27,7 @@ NUMBER_OF_CLIENTS=$(grep -E "^#vms# " "/etc/xray/config.json" | sort | uniq | cu
 	echo " Tekan CTRL+C untuk Kembali"
 	echo " ================================="
 	echo "     No User    Expired"
-	grep -E "^### " "/etc/xray/config.json" | cut -d ' ' -f 2-3 | sort | uniq | column -t | nl -s ') '
+	grep -E "^#vms# " "/etc/xray/config.json" | cut -d ' ' -f 2-3 | sort | uniq | column -t | nl -s ') '
 	until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
 		if [[ ${CLIENT_NUMBER} == '1' ]]; then
 			read -rp "Select one client [1]: " CLIENT_NUMBER
