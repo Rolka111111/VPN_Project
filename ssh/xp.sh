@@ -6,7 +6,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 
 
 ##----- Auto Remove Vmess
-data=( `cat /etc/xray/config.json | grep '^#vmes#' | cut -d ' ' -f 2 | sort | uniq`);
+data=( `cat /etc/xray/config.json | grep '^#vms#' | cut -d ' ' -f 2 | sort | uniq`);
 now=`date +"%Y-%m-%d"`
 for user in "${data[@]}"
 do
