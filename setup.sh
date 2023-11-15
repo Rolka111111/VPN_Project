@@ -34,35 +34,9 @@ echo -e "[ ${green}INFO${NC} ] Preparing the install file"
 apt install git curl -y >/dev/null 2>&1
 apt install python -y >/dev/null 2>&1
 
-
-domain=$(cat /etc/xray/domain)
-echo -e "========================="
-read -rp "Input Domain/Host : " -e domain
-echo -e "========================="
-echo -e "Domain di tambahkan: ${BLUE}${domain} ${NC}Please Wait..."
-echo -e "========================="
-sleep 3
-# Cek DNS terubung dengan VPS atau tidak
-cekdomain=$(curl -sm8 http://ipget.net/?ip="${domain}")
-if [[ ${MYIP} == ${cekdomain} ]]; then
-     clear
-     echo -e "${success}Domain: ${BLUE}${domain} ${NC}Terhubung dengan IP VPS"
-     sleep 3
- else
-     clear
-     echo -e "${error1}Domain: ${BLUE}${domain} ${NC}Tidak Terhubung dengan IP VPS"
-     sleep 3
-     exit 0
-fi
-# Done
-echo $domain >> /etc/xray/domain
-echo $domain >> /root/domain
-echo "IP=$domain" >> /var/lib/akbarstorevpn/ipvps.conf
-#Bersihkan terminal
-clear
 #
 # Add Domain
-#wget https://raw.githubusercontent.com/owl64/VPN_Project/master/updated/adddomain.sh && chmod +x adddomain.sh && ./adddomain.sh
+wget https://raw.githubusercontent.com/owl64/VPN_Project/master/updated/adddomain.sh && chmod +x adddomain.sh && ./adddomain.sh
 #
 #install tools/alat
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/install-tools.sh && chmod +x install-tools.sh && ./install-tools.sh
