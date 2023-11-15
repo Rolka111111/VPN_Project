@@ -101,7 +101,6 @@ mkdir -p /home/vps/public_html
 
 # set Cron
 echo "0 5 * * * root xp && reboot" >> /etc/crontab
-echo "59 0 * * * root resetlog" >> /etc/crontab
 
 # set uuid
 uuid9=$(cat /proc/sys/kernel/random/uuid)
