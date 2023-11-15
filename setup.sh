@@ -36,20 +36,23 @@ wget https://raw.githubusercontent.com/owl64/VPN_Project/master/updated/adddomai
 #install tools/alat
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/install-tools.sh && chmod +x install-tools.sh && ./install-tools.sh
 #
+#Install SSH WS
+wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+
 #Instal Xray
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/install-xray.sh && chmod +x install-xray.sh && ./install-xray.sh
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 
-#Install SSH WS
-wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+#install OVPN
+wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh/vpn.sh && chmod +x vpn.sh && ./vpn.sh
 
 #install OHP
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ohp/ohp-dropbear.sh && chmod +x ohp-dropbear.sh && ./ohp-dropbear.sh
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ohp/ohp-ssh.sh && chmod +x ohp-ssh.sh && ./ohp-ssh.sh
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ohp/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 
-#install OVPN
-wget https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh/vpn.sh && chmod +x vpn.sh && ./vpn.sh
+#Install Limit For Xray
+wget https://raw.githubusercontent.com/owl64/VPN_Project/master/limit/limit.sh && chmod +x limit.sh && ./limit.sh
 
 #install xmenu
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updatedll.sh && chmod +x updatedll.sh && ./updatedll.sh
@@ -57,8 +60,6 @@ wget https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updatedll.s
 #install Backup
 wget https://raw.githubusercontent.com/owl64/VPN_Project/master/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
-#Install Limit For Xray
-wget https://raw.githubusercontent.com/owl64/VPN_Project/master/limit/limit.sh && chmod +x limit.sh && ./limit.sh
 
 #SELESAI
 # collor status
