@@ -56,6 +56,7 @@
 - fix Bug Auto Delete
 - fix Bug SSh WS
 - fix Bug OVPN Port Closed
+- fix Bug Limit Vmess
 - Reset log tiap 2 jam
 
 # OS 
