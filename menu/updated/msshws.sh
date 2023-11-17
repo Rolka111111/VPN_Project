@@ -53,3 +53,7 @@ nano /etc/issue.net
 4)
 mssh
 ;;
+*)
+    menu
+    ;;
+esac

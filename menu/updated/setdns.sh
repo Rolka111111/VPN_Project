@@ -53,3 +53,7 @@ statusdns
 6)
 msetting
 ;;
+*)
+    menu
+    ;;
+esac
