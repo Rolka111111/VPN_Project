@@ -76,7 +76,7 @@ wget -O pxrayvmess "${akbarvpnn}/pxrayvmess.sh"
 wget -O mbackup "${akbarvpnn}/mbackup.sh"
 wget -O mbandwith "${akbarvpnn}/mbandwith.sh"
 wget -O mssh "${akbarvpnn}/mssh.sh"
-wget -O sshws "${akbarvpnn}/sshws.sh"
+wget -O msshws "${akbarvpnn}/msshws.sh"
 wget -O setdns "${akbarvpnn}/setdns.sh"
 
 # update xray menu
@@ -200,6 +200,7 @@ chmod +x up
 chmod +x user-lock
 chmod +x user-unlock
 chmod +x statussshws
+chmod +x msshws
 
 # Update Backup
 chmod +x addemail
@@ -220,6 +221,9 @@ chmod +x cisco
 chmod +x adguard
 chmod +x quad9
 chmod +x statusdns
+
+#xray MOD
+chmod +x xraymod
 
 clear
 echo -e "Update Selesai..."
