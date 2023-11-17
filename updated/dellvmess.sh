@@ -23,7 +23,7 @@ echo -e "${NC}${LIGHT}Telegram : https://t.me/liz_mine"
 exit 0
 fi
 clear
-NUMBER_OF_CLIENTS=$(grep -E "^### " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 2 | wc -l)
+NUMBER_OF_CLIENTS=$(grep -E "^#vms# " "/etc/xray/config.json" | sort | uniq | cut -d ' ' -f 2 | wc -l)
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 		echo ""
 		echo "You have no existing clients!"
