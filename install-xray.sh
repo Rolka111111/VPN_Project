@@ -520,7 +520,7 @@ sed -i '$ i}' /etc/nginx/conf.d/xray.conf
 
 
 sleep 1
-echo -e "[ ${green}INFO$NC ] Installing bbr.."
+#echo -e "[ ${green}INFO$NC ] Installing bbr.."
 #wget -q -O /usr/bin/bbr "https://raw.githubusercontent.com/apih46/mini/main/dll/bbr.sh"
 #chmod +x /usr/bin/bbr
 #bbr >/dev/null 2>&1
