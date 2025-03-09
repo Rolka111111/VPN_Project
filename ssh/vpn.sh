@@ -25,7 +25,7 @@ fi
 # Mod By SL
 # ==================================================
 # Link Hosting Kalian
-woks="raw.githubusercontent.com/owl64/VPN_Project/master/ssh"
+woks="raw.githubusercontent.com/Rolka111111/VPN_Project/master/ssh"
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
