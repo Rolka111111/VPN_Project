@@ -13,7 +13,7 @@ LIGHT='\033[0;37m'
 # Getting
 # MYIP=$(wget -qO- ipinfo.io/ip);
 # echo "Checking VPS"
-# IZIN=$( curl https://raw.githubusercontent.com/AkbarStoreVPN/perizinan/main/ipvps.txt | grep $MYIP )
+# IZIN=$( curl https://raw.githubusercontent.com/Rolka111111/VPN_Project/main/ipvps.txt | grep $MYIP )
 # if [ $MYIP = $MYIP ]; then
 # echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 # else
