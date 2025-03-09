@@ -21,7 +21,7 @@ Port_OHP='8686';
 
 #Installing ohp Server
 cd 
-wget -O /usr/local/bin/ohps "https://raw.githubusercontent.com/owl64/VPN_Project/master/ohp/ohps"
+wget -O /usr/local/bin/ohps "https://raw.githubusercontent.com/Rolka111111/VPN_Project/master/ohp/ohps"
 chmod +x /usr/local/bin/ohps
 
 #Buat Service Untuk OHP SSH
