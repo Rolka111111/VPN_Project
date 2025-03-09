@@ -30,15 +30,15 @@ else
 fi
 # ==========================================
 # link hosting kalian
-akbarvpn="https://raw.githubusercontent.com/owl64/VPN_Project/master/backup"
-akbarvpnn="https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updated"
-akbarvpnnn="https://raw.githubusercontent.com/owl64/VPN_Project/master/updated"
-sshmenu="https://raw.githubusercontent.com/owl64/VPN_Project/master/ssh"
-menudns="https://raw.githubusercontent.com/owl64/VPN_Project/master/dns"
-xraymod="https://raw.githubusercontent.com/owl64/VPN_Project/master/xray"
+akbarvpn="https://raw.githubusercontent.com/Rolka111111/VPN_Project/master/backup"
+akbarvpnn="https://raw.githubusercontent.com/Rolka111111/VPN_Project/master/menu/updated"
+akbarvpnnn="https://raw.githubusercontent.com/Rolka111111/VPN_Project/master/updated"
+sshmenu="https://raw.githubusercontent.com/Rolka111111/VPN_Project/master/ssh"
+menudns="https://raw.githubusercontent.com/Rolka111111/VPN_Project/master/dns"
+xraymod="https://raw.githubusercontent.com/Rolka111111/VPN_Project/master/xray"
 cd
 rm -r updatedll
-wget -O updatedll "https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updatedll.sh"
+wget -O updatedll "https://raw.githubusercontent.com/Rolka111111/VPN_Project/master/menu/updatedll.sh"
 rm -rf updatedll
 
 # hapus
@@ -50,9 +50,9 @@ rm -r updatedll
 #
 cd /usr/bin
 # update by Andi64
-wget -O updatedll "https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updatedll.sh"
-wget -O restart-xray "https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/restart-xray.sh"
-wget -O cek-port "https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/cek-port.sh"
+wget -O updatedll "https://raw.githubusercontent.com/Rolka111111/VPN_Project/master/menu/updatedll.sh"
+wget -O restart-xray "https://raw.githubusercontent.com/Rolka111111/VPN_Project/master/menu/restart-xray.sh"
+wget -O cek-port "https://raw.githubusercontent.com/Rolka111111/VPN_Project/master/menu/cek-port.sh"
 # Get Backup Menu
 wget -O addemail "${akbarvpn}/addemail.sh"
 wget -O autobackup "${akbarvpn}/autobackup.sh"
