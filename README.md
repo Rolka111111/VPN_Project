@@ -91,7 +91,7 @@ apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 4. Salin kode di bawah ini dan paste kan ke dalam vps punya kamu
 - Jangan Menutup Terminal Sebelum Instalasi selesai
 ```
-wget https://raw.githubusercontent.com/owl64/VPN_Project/master/setup.sh && chmod +x setup.sh && ./setup.sh
+wget https://raw.githubusercontent.com/Rolka111111/VPN_Project/master/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 5. jika sudah selesai, untuk menampilkan menu Ketik
 
@@ -114,7 +114,7 @@ restart-xray
 # Update SCRIPT
 Untuk melakukan Update Ketikan perintah berikut:
 ```
-wget https://raw.githubusercontent.com/owl64/VPN_Project/master/menu/updated/getupdate.sh && chmod +x getupdate.sh && getupdate.sh
+wget https://raw.githubusercontent.com/Rolka111111/VPN_Project/master/menu/updated/getupdate.sh && chmod +x getupdate.sh && getupdate.sh
 ```
 Lakukan Update tiap 3 bulan sekali
 
